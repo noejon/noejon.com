@@ -1,0 +1,97 @@
+---
+import Jon from "../components/Jon.astro";
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+const DESCRIPTION = "Describing the website";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={DESCRIPTION} />
+		<meta name="author" content="Jonathan Noé" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<div class="page-wrapper">
+			<header class="this-is-noj">
+				<Jon />
+			</header>
+			<main class="main-wrapper">
+				<slot />
+			</main>
+			<footer class="made-by-love">Made with love by Noj</footer>
+		</div>
+	</body>
+</html>
+<style is:global>
+	:root {
+		--text-color: #f5f5f5;
+		--accent: 136, 58, 234;
+		--accent-light: 224, 204, 250;
+		--accent-dark: 49, 10, 101;
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			white 60%
+		);
+	}
+	html {
+		font-family: system-ui, sans-serif;
+		background: #13151a;
+		background-size: 224px;
+	}
+
+	body {
+		margin: 0;
+		padding: 0;
+	}
+
+	code {
+		font-family:
+			Menlo,
+			Monaco,
+			Lucida Console,
+			Liberation Mono,
+			DejaVu Sans Mono,
+			Bitstream Vera Sans Mono,
+			Courier New,
+			monospace;
+	}
+
+	.page-wrapper {
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.main-wrapper {
+		flex-grow: 1;
+	}
+
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+
+	.this-is-noj {
+		color: var(--text-color);
+	}
+
+	.made-by-love {
+		color: var(--text-color);
+	}
+</style>

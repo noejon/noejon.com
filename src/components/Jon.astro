@@ -1,0 +1,55 @@
+---
+import "./jon.css";
+---
+
+<h1 class="callout this-is">This is</h1>
+<div class="jon-wrapper">
+  <h1 class="callout big-jon">
+    <div class="big-jon-position">
+      <span>J</span>
+      <span class="avatar">
+        <span class="poke"></span>
+        o
+      </span>
+      <span>n</span>
+    </div>
+  </h1>
+</div>
+<style>
+  .jon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -3em;
+  }
+
+  .callout {
+    text-transform: uppercase;
+    text-align-last: center;
+    font-weight: 250;
+    line-height: 1.25;
+    letter-spacing: 0.25;
+  }
+
+  .callout.this-is {
+    font-size: 2rem;
+    margin: 0 0;
+  }
+
+  .callout.big-jon {
+    font-size: 6rem;
+    font-weight: 900;
+  }
+
+  .big-jon-position {
+    display: flex;
+    gap: 0.4rem;
+    /* border: 10px solid red; */
+  }
+
+  .avatar {
+    position: relative;
+    letter-spacing: 2rem;
+    color: transparent;
+  }
+</style>
