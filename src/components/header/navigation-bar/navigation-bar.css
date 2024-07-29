@@ -1,0 +1,23 @@
+.navigation-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+  margin: 0.5rem auto;
+}
+
+.navigation-item {
+  margin: 1rem;
+}
+
+@media (max-width: 550px) {
+  .navigation-list {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .navigation-item {
+    margin: 0;
+  }
+}

@@ -1,6 +1,6 @@
 ---
-import LeBigJon from "../components/le-big-jon/le-big-jon.astro";
-import NavBar from "../components/navigation-bar/navigation-bar.astro";
+import LeBigJon from "../components/header/le-big-jon/le-big-jon.astro";
+import NavBar from "../components/header/navigation-bar/navigation-bar.astro";
 
 interface Props {
 	title: string;
@@ -26,7 +26,7 @@ const DESCRIPTION = "Describing the website";
 	</head>
 	<body>
 		<div class="page-wrapper">
-			<header>
+			<header class="full-width flex-column-center">
 				<LeBigJon />
 				<NavBar />
 			</header>

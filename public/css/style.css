@@ -1,12 +1,21 @@
 :root {
   --background-color: #f5f5f5;
-  --text-color: #0a0a0a;
+  --text-color: #383838;
+
+  --accent-color: #ffdba5;
+  --accent-color-2: #ffa5db;
+
+  --max-mobile-width: 550px;
+  --max-tablet-width: 1024px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-color: #0a0a0a;
+    --background-color: #383838;
     --text-color: #f5f5f5;
+
+    --accent-color: #a5c9ff;
+    --accent-color-2: #a5ffc9;
   }
 }
 
@@ -18,4 +27,50 @@ html {
 body {
   width: 100vw;
   height: 100svh;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.flex-row-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-link-decoration {
+  position: relative;
+}
+
+.circle-link-decoration::before {
+  width: 0.75em;
+  height: 0.75em;
+  position: absolute;
+  content: '';
+  pointer-events: none;
+  background: var(--accent-color);
+  z-index: -1;
+  --translateX: -0.70rem;
+  --translateY: -0.50rem;
+  --rotate: 0deg;
+  transform: translateX(var(--translateX)) translateY(var(--translateY)) rotate(var(--rotate));
+  visibility: hidden;
+}
+
+.circle-link-decoration:hover::before {
+  visibility: visible;
+}
+
+@media (max-width: 550px) {
+  .circle-link-decoration::before {
+    --translateX: -0.15rem;
+  }
 }

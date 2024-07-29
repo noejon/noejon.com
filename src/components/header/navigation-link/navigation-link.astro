@@ -1,0 +1,19 @@
+---
+import "./navigation-link.css";
+
+interface Props {
+  topDecoration?: string;
+  linkText: string;
+  bottomDecoration?: string;
+}
+
+const { topDecoration, linkText, bottomDecoration } = Astro.props;
+---
+
+<a href={linkText}>
+  <small class="small top">{topDecoration}</small>
+  <span class="link-text circle-link-decoration">
+    <slot class="hide" />
+  </span>
+  <small class="small bottom">{bottomDecoration}</small>
+</a>

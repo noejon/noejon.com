@@ -1,0 +1,48 @@
+---
+import "./navigation-bar.css";
+import NavigationLink from "../navigation-link/navigation-link.astro";
+---
+
+<nav class="full-width">
+  <ul class="navigation-list">
+    <li class="navigation-item">
+      <NavigationLink
+        topDecoration="More"
+        bottomDecoration="me"
+        linkText="/about"
+      >
+        About
+      </NavigationLink>
+    </li>
+    <li class="navigation-item">
+      <NavigationLink
+        topDecoration="Jon's"
+        bottomDecoration="adventures"
+        linkText="/blog"
+      >
+        Blog
+      </NavigationLink>
+    </li>
+    <li class="navigation-item">
+      <NavigationLink
+        topDecoration="Today I"
+        bottomDecoration="learned"
+        linkText="/til"
+      >
+        T.I.L
+      </NavigationLink>
+    </li>
+    <li class="navigation-item">
+      <NavigationLink linkText="/uses"> /uses </NavigationLink>
+    </li>
+    <li class="navigation-item">
+      <NavigationLink
+        topDecoration="Feel free to"
+        bottomDecoration="me"
+        linkText="/contact"
+      >
+        Contact
+      </NavigationLink>
+    </li>
+  </ul>
+</nav>
