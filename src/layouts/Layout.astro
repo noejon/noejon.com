@@ -1,5 +1,6 @@
 ---
-import Jon from "../components/Jon.astro";
+import LeBigJon from "../components/le-big-jon/le-big-jon.astro";
+import NavBar from "../components/navigation-bar/navigation-bar.astro";
 
 interface Props {
 	title: string;
@@ -26,7 +27,8 @@ const DESCRIPTION = "Describing the website";
 	<body>
 		<div class="page-wrapper">
 			<header>
-				<Jon />
+				<LeBigJon />
+				<NavBar />
 			</header>
 			<main class="main-wrapper">
 				<slot />
