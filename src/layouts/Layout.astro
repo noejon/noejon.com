@@ -17,12 +17,15 @@ const DESCRIPTION = "Describing the website";
 		<meta name="author" content="Jonathan Noé" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="stylesheet" href="css/normalise.css" />
+		<link rel="stylesheet" href="css/accessibility.css" />
+		<link rel="stylesheet" href="css/style.css" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
 	<body>
 		<div class="page-wrapper">
-			<header class="this-is-noj">
+			<header>
 				<Jon />
 			</header>
 			<main class="main-wrapper">
@@ -34,7 +37,6 @@ const DESCRIPTION = "Describing the website";
 </html>
 <style is:global>
 	:root {
-		--text-color: #f5f5f5;
 		--accent: 136, 58, 234;
 		--accent-light: 224, 204, 250;
 		--accent-dark: 49, 10, 101;
@@ -44,16 +46,6 @@ const DESCRIPTION = "Describing the website";
 			rgb(var(--accent-light)) 30%,
 			white 60%
 		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	}
-
-	body {
-		margin: 0;
-		padding: 0;
 	}
 
 	code {
@@ -69,14 +61,14 @@ const DESCRIPTION = "Describing the website";
 	}
 
 	.page-wrapper {
-		min-height: 100vh;
+		min-height: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
 
 	.main-wrapper {
-		flex-grow: 1;
+		flex: 1;
 	}
 
 	.text-gradient {
@@ -85,13 +77,5 @@ const DESCRIPTION = "Describing the website";
 		-webkit-text-fill-color: transparent;
 		background-size: 400%;
 		background-position: 0%;
-	}
-
-	.this-is-noj {
-		color: var(--text-color);
-	}
-
-	.made-by-love {
-		color: var(--text-color);
 	}
 </style>
