@@ -1,4 +1,8 @@
 ---
+import "../styles/normalise.css";
+import "../styles/accessibility.css";
+import "../styles/global.css";
+
 import LeBigJon from "../components/header/le-big-jon/le-big-jon.astro";
 import NavBar from "../components/header/navigation-bar/navigation-bar.astro";
 
@@ -18,9 +22,6 @@ const DESCRIPTION = "Describing the website";
 		<meta name="author" content="Jonathan Noé" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="stylesheet" href="./css/normalise.css" />
-		<link rel="stylesheet" href="./css/accessibility.css" />
-		<link rel="stylesheet" href="./css/style.css" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
