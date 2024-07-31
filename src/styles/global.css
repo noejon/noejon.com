@@ -1,12 +1,35 @@
 :root {
   --background-color: #f5f5f5;
   --text-color: #383838;
+  --text-color-muted: #BBB;
 
-  --accent-color: #ffdba5;
-  --accent-color-2: #ffa5db;
+  --accent-color: #004BBD;
+  --accent-color-2: #006127;
 
-  --max-mobile-width: 550px;
-  --max-tablet-width: 1024px;
+  --negative-accent-color: #abcdef;
+  --negative-accent-color-2: #a5ffc9;
+
+  --accent-gradient: linear-gradient(45deg, var(--accent-color) 0%, var(--accent-color-2) 16%,
+      var(--accent-color) 33%,
+      var(--accent-color-2) 49%,
+      var(--accent-color) 66%,
+      var(--accent-color-2) 82%,
+      var(--accent-color) 100%);
+  --accent-gradient-animation: accent-gradient-animation 10s linear infinite;
+  --accent-gradient-animation-fast: accent-gradient-animation 5s linear infinite;
+  --accent-gradient-animation-faster: accent-gradient-animation 1s linear infinite;
+
+  --max-width: min(80vw, 30rem, 65ch);
+}
+
+@keyframes accent-gradient-animation {
+  0% {
+    background-position: 0
+  }
+
+  to {
+    background-position: 100%
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,8 +37,11 @@
     --background-color: #383838;
     --text-color: #f5f5f5;
 
-    --accent-color: #a5c9ff;
+    --accent-color: #abcdef;
     --accent-color-2: #a5ffc9;
+
+    --negative-accent-color: #004BBD;
+    --negative-accent-color-2: #006127;
   }
 }
 
@@ -27,6 +53,46 @@ html {
 body {
   width: 100vw;
   height: 100svh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: .875rem;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: .85rem;
+  font-weight: 600;
+  color: var(--text-color-muted);
 }
 
 .full-width {
@@ -46,11 +112,26 @@ body {
   align-items: center;
 }
 
-.circle-link-decoration {
-  position: relative;
+.flex-column-start {
+  display: flex;
+  flex-direction: column;
 }
 
-.circle-link-decoration::before {
+a:hover {
+  background: var(--accent-gradient);
+  background-clip: text;
+  color: transparent;
+  display: block;
+  animation: var(--accent-gradient-animation-faster);
+  background-size: 200%;
+}
+
+/* .circle-link-decoration {
+  position: relative;
+} */
+
+/* TODO: Those are no longer circles make them square */
+/* .circle-link-decoration::before {
   width: 0.75em;
   height: 0.75em;
   position: absolute;
@@ -69,8 +150,12 @@ body {
   visibility: visible;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   .circle-link-decoration::before {
     --translateX: -0.15rem;
   }
+} */
+
+.max-width {
+  max-width: var(--max-width);
 }

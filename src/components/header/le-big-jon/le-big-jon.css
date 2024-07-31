@@ -12,19 +12,50 @@
   font-weight: 900;
 }
 
-.le-big-jon {
+.le-big-jon-wrapper {
   width: 1em;
   height: 1em;
+  border: solid 0.65rem #383838;
+  border-radius: 50%;
+}
+
+.le-big-jon {
   user-select: none;
-  border: 0.65rem solid #383838;
   border-radius: 50%;
   box-shadow: inset 0 0 1rem var(--background-color);
   filter: brightness(1.25);
 }
 
+a:hover .le-big-jon-wrapper {
+  display: block;
+  position: relative;
+  background-clip: padding-box;
+  border: solid 0.65rem transparent;
+}
+
+a:hover .le-big-jon-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -0.65rem;
+  /* !importanté */
+  border-radius: inherit;
+  /* !importanté */
+  background: var(--accent-gradient);
+  animation: var(--accent-gradient-animation-faster);
+}
+
 @media (prefers-color-scheme: dark) {
+  .le-big-jon-wrapper {
+    border: solid 0.65rem var(--text-color);
+  }
+
   .le-big-jon {
-    border: 0.65rem solid var(--text-color);
     filter: brightness(1.15);
+
   }
 }

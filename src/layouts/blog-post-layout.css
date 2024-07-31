@@ -1,0 +1,15 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  font-size: 0.85rem;
+  line-height: 0.85rem;
+}

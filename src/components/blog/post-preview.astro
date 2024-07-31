@@ -1,0 +1,12 @@
+---
+import "./post-preview.css";
+const { description, title, url } = Astro.props;
+---
+
+<article class="post-preview max-width">
+  <a href={url}>
+    <h2>{title}</h2>
+  </a>
+  <p>{description}</p>
+  <a href={url} class="read-this">Read this post →</a>
+</article>

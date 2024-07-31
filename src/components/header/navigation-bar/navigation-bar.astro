@@ -1,11 +1,19 @@
 ---
 import "./navigation-bar.css";
 import NavigationLink from "../navigation-link/navigation-link.astro";
+import LeBigJon from "../le-big-jon/le-big-jon.astro";
 ---
 
-<nav class="full-width">
+<nav class="full-width flex-column-center">
+  {
+    Astro.url.pathname !== "/" && (
+      <a href="/">
+        <LeBigJon />
+      </a>
+    )
+  }
   <ul class="navigation-list">
-    <li class="navigation-item">
+    <li class="navigation-item bretzel">
       <NavigationLink
         topDecoration="More"
         bottomDecoration="me"
@@ -14,28 +22,15 @@ import NavigationLink from "../navigation-link/navigation-link.astro";
         About
       </NavigationLink>
     </li>
-    <li class="navigation-item">
-      <NavigationLink
-        topDecoration="Jon's"
-        bottomDecoration="adventures"
-        linkText="/blog"
-      >
+    <li class="navigation-item bretzel">
+      <NavigationLink topDecoration="Le" linkText="/blog">
         Blog
       </NavigationLink>
     </li>
-    <li class="navigation-item">
-      <NavigationLink
-        topDecoration="Today I"
-        bottomDecoration="learned"
-        linkText="/til"
-      >
-        T.I.L
-      </NavigationLink>
-    </li>
-    <li class="navigation-item">
+    <li class="navigation-item bretzel">
       <NavigationLink linkText="/uses"> /uses </NavigationLink>
     </li>
-    <li class="navigation-item">
+    <li class="navigation-item bretzel">
       <NavigationLink
         topDecoration="Feel free to"
         bottomDecoration="me"

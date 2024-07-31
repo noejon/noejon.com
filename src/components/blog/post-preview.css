@@ -1,0 +1,11 @@
+.post-preview {
+  margin: 1rem 0;
+  width: 100%
+}
+
+.read-this {
+  text-transform: uppercase;
+  color: var(--accent-color);
+  font-size: 0.85rem;
+  line-height: 0.85rem;
+}

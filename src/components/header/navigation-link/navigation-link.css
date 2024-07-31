@@ -12,7 +12,7 @@
   font-weight: 900;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   .small {
     display: none;
   }

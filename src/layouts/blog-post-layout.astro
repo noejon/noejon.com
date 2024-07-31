@@ -1,0 +1,31 @@
+---
+import "./blog-post-layout.css";
+import Layout from "./base-layout.astro";
+import Hero from "../components/common/hero.astro";
+
+const {
+  frontmatter: { title, author, tags, pubDate },
+} = Astro.props;
+
+const displayPublicationDate = new Date(pubDate).toLocaleDateString("en-US", {
+  weekday: "long",
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+---
+
+<Layout title={title}>
+  <Hero title={title}>
+    <div class="meta">
+      <time datetime={displayPublicationDate}>{displayPublicationDate}</time>
+      <address><a rel="author" href="/about">{author}</a></address>
+      <!-- <span>{tags.map((tag) => tag + " ")}</span> -->
+    </div>
+  </Hero>
+  <div class="flex-column-center">
+    <article class="post max-width">
+      <slot />
+    </article>
+  </div>
+</Layout>

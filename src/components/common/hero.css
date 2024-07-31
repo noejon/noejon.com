@@ -1,0 +1,26 @@
+.hero {
+  padding: 1rem 0;
+  position: relative;
+}
+
+.hero::after {
+  animation: var(--accent-gradient-animation);
+  background: var(--accent-gradient);
+  background-size: 200%;
+  bottom: 0;
+  content: "";
+  height: .1rem;
+  position: absolute;
+  width: 100%;
+}
+
+.hero::before {
+  animation: var(--accent-gradient-animation);
+  background: var(--accent-gradient);
+  background-size: 200%;
+  top: 0;
+  content: "";
+  height: .1rem;
+  position: absolute;
+  width: 100%;
+}
