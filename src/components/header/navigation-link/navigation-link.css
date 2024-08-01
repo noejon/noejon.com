@@ -1,6 +1,7 @@
 .small {
   display: block;
   line-height: 0.75rem;
+  min-height: 0.75rem;
   text-align: right;
   font-size: 60%;
   pointer-events: none;
