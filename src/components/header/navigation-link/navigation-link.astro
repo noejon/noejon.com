@@ -12,7 +12,7 @@ const { topDecoration, linkText, bottomDecoration } = Astro.props;
 
 <a href={linkText} class="block">
   <small class="small top">{topDecoration}</small>
-  <span class="link-text circle-link-decoration">
+  <span class="link-text">
     <slot class="hide" />
   </span>
   <small class="small bottom">{bottomDecoration}</small>

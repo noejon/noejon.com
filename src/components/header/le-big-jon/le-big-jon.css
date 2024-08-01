@@ -43,8 +43,8 @@ a:hover .le-big-jon-wrapper::before {
   z-index: -1;
   margin: -0.64rem;
   border-radius: inherit;
-  background-size: 200%;
   background: var(--accent-gradient);
+  background-size: 200%;
   animation: var(--accent-gradient-animation-faster);
 }
 
