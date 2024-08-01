@@ -117,11 +117,14 @@ h6 {
   flex-direction: column;
 }
 
+.block {
+  display: block;
+}
+
 a:hover {
   background: var(--accent-gradient);
   background-clip: text;
   color: transparent;
-  display: block;
   animation: var(--accent-gradient-animation-faster);
   background-size: 200%;
 }

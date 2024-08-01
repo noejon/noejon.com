@@ -10,7 +10,7 @@ interface Props {
 const { topDecoration, linkText, bottomDecoration } = Astro.props;
 ---
 
-<a href={linkText}>
+<a href={linkText} class="block">
   <small class="small top">{topDecoration}</small>
   <span class="link-text circle-link-decoration">
     <slot class="hide" />

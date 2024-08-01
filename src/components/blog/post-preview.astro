@@ -4,7 +4,7 @@ const { description, title, url } = Astro.props;
 ---
 
 <article class="post-preview max-width">
-  <a href={url}>
+  <a class="block" href={url}>
     <h2>{title}</h2>
   </a>
   <p>{description}</p>
