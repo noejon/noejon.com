@@ -177,3 +177,8 @@ a:hover {
 .post blockquote p {
   display: inline;
 }
+
+.post ul {
+  list-style: disc;
+  margin-left: 1.4ch;
+}
