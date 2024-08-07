@@ -156,3 +156,24 @@ a:hover {
 .post a:active {
   background-color: var(--negative-accent-color);
 }
+
+.post blockquote {
+  background: var(--text-color);
+  color: var(--background-color);
+  border-left: .5rem solid var(--text-color-muted);
+  padding: 0.5rem 0.5rem;
+  border-radius: .25rem;
+}
+
+.post blockquote:before {
+  color: var(--text-color-muted);
+  content: open-quote;
+  font-size: 4rem;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+.post blockquote p {
+  display: inline;
+}
