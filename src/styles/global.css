@@ -144,22 +144,8 @@ a:hover {
 
 .post a:hover,
 .post a:focus {
-  text-decoration: underline;
-  color: var(--text-color);
   position: relative;
-}
-
-.post a:hover::before,
-.post a:focus::before {
-  height: 5px;
-  position: absolute;
-  background: var(--accent-color);
-  content: "";
-  width: 100%;
-  bottom: -2px;
-  z-index: -1;
-  transition: transform 0.1s;
-  transform: skew(40deg) rotate(6deg);
+  text-decoration: underline;
 }
 
 .post a:visited {
