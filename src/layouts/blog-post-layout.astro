@@ -18,8 +18,22 @@ const displayPublicationDate = new Date(pubDate).toLocaleDateString("en-US", {
 <Layout title={title}>
   <Hero title={title}>
     <div class="meta">
-      <time datetime={displayPublicationDate}>{displayPublicationDate}</time>
-      <address><a rel="author" href="/about">{author}</a></address>
+      {
+        pubDate && (
+          <time datetime={displayPublicationDate}>
+            {displayPublicationDate}
+          </time>
+        )
+      }
+      {
+        author && (
+          <address>
+            <a rel="author" href="/about">
+              {author}
+            </a>
+          </address>
+        )
+      }
       <!-- <span>{tags.map((tag) => tag + " ")}</span> -->
     </div>
   </Hero>
