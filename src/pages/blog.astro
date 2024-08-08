@@ -6,17 +6,21 @@ import PostPreview from "../components/blog/post-preview.astro";
 import Hero from "../components/common/hero.astro";
 
 const allPosts = await getCollection("posts");
+const sortedPosts = allPosts.sort(
+  (a, b) =>
+    new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime(),
+);
 ---
 
 <Layout title="Le Blog - Jon Noé">
   <Hero title="Le Blog">
-    <p>Really anything tech I want to talk about.</p>
-    <p>Why blogging?</p>
-    <p>Because I believe in learning by teaching/sharing.</p>
+    <p>Here you will find anything I feel like talking about.</p>
+    <p>It's mostly going to be about tech and leading/managing.</p>
+    <p>Sharing things I discover and personal experiences</p>
   </Hero>
   <section class="flex-column-center">
     {
-      allPosts.map((post) => (
+      sortedPosts.map((post) => (
         <PostPreview
           url={`/posts/${post.slug}`}
           title={post.data.title}

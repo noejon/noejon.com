@@ -1,5 +1,7 @@
 ---
 import "./le-big-jon.css";
+import { Image } from "astro:assets";
+import leBigJonImage from "../../../assets/le-big-jon.jpg";
 ---
 
 <div role="banner" class="big-jon line-height-1">
@@ -9,8 +11,8 @@ import "./le-big-jon.css";
   >
     <span aria-hidden="true">J</span>
     <div class="le-big-jon-wrapper">
-      <img
-        src="/assets/Jon.jpg"
+      <Image
+        src={leBigJonImage}
         alt="A close up photo of Jon with his sunglasses. This representes the O of the name Jon"
         class="le-big-jon"
       />
