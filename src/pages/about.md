@@ -25,7 +25,7 @@ I believe that teaching is the best way to learn, so what I am sharing here is m
 
 I am married to my beautiful wife Audrey, and we have a girl and a boy.
 
-I enjoy cooking and am always looking forward to holidays where I can cook a nice feast for everyone. I am also an on and off avid reader, lately a little bit more off than on. Here is [a list](./books.md) of some books that I enjoyed reading. I also like a good board game night or playing some Magic the Gathering.
+I enjoy cooking and am always looking forward to holidays where I can cook a nice feast for everyone. I am also an on and off avid reader, lately a little bit more off than on. Here is [a list](/books) of some books that I enjoyed reading. I also like a good board game night or playing some Magic the Gathering.
 
 ## Where is this dude?
 

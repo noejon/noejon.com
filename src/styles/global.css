@@ -138,6 +138,17 @@ a:hover {
   max-width: var(--max-width);
 }
 
+.vertical-margin {
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 .post a {
   text-decoration: underline;
 }

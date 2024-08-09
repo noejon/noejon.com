@@ -62,4 +62,4 @@ Here you will find the software and the hardware I use. My setting today is not 
 
 ## Subscriptions
 
-I subscribe to absolutely nothing (except for this domain name 😜)
+I subscribe to absolutely nothing (except this domain name 😜)
