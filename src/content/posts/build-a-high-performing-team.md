@@ -1,18 +1,18 @@
 ---
 title: Building a high performance team
 pubDate: 2024-08-12
-description: "I recently failed at the most important stage of the interview process. The last interview with the CPO, which stopped me from getting the job. This article is about my lessons learned."
+description: In the past I failed an interview on the question "How do you build a high performing team?". This blog post contains what I wished I answered on that fateful day.
 author: "Jonathan Noé"
 tags: ["experiences", "leadership", "interviews", "lesson learned"]
 ---
 
 G'day Internet
 
-I recently interviewed for a role of Tech Lead Manager at [Honey Insurance](https://www.linkedin.com/company/honey-insurance/).
+In the past I interviewed for a role of Tech Lead Manager at [Honey Insurance](https://www.linkedin.com/company/honey-insurance/).
 
-I had passed the first 7 interviews (screening, intro with the VP of engineering, take home test, behavioural/culture fit with enginering managers, system design, behavioural/culture fit with Product). There was one last hurdle before getting an offer, and that was one last behavioural/culture fit interview with the CPO. Unfortunately that interview did not go well for me. My answers were vague and I did not show how well my skills are aligned with the company.
+I had passed the first 6 interviews (screening, Intro with the VP of engineering, take home test, behavioural/culture fit with enginering managers, system design, behavioural/culture fit with Product). There was one last hurdle before getting an offer, and that was one last behavioural/culture fit interview with the CPO. Unfortunately that interview did not go well for me. My answers were vague and I did not show how well my skills are aligned with the company.
 
-First let's go on a bit of a tangent and talk about interview preparation and the mistake I made not preparing for this one.
+First let's go on a bit of a tangent and talk about interview preparation and the mistake I made during the preparation for this one.
 
 ## The importance of good preparation for me
 

@@ -1,7 +1,7 @@
 ---
 title: G'day internet! 👋🏻
 pubDate: 2024-08-08
-description: "Greeting and introducing myself to the internet. And explaining why I do this and make a promise on a release schedule"
+description: "Let me introduce myself"
 author: "Jonathan Noé"
 tags: ["blogging", "learning in public"]
 ---
