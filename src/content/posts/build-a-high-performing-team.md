@@ -1,6 +1,6 @@
 ---
-title: Building a high performance culture
-pubDate: 2024-08-09
+title: Building a high performance team
+pubDate: 2024-08-12
 description: "I recently failed at the most important stage of the interview process. The last interview with the CPO, which stopped me from getting the job. This article is about my lessons learned."
 author: "Jonathan Noé"
 tags: ["experiences", "leadership", "interviews", "lesson learned"]
