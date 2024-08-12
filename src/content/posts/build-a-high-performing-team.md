@@ -153,6 +153,8 @@ If you have a team of mid-level engineers who need guidance, look for a senior e
 
 If your team tends to go by the book and seeks gold-plated solutions, hire someone who is more agile and pragmatic.
 
+Now that you hired a new starter, make sure that their onboarding is well structured, welcoming and comprehensive.
+
 ### Onboarding
 
 How effectively you onboard someone can significantly impact their success:
@@ -162,13 +164,15 @@ How effectively you onboard someone can significantly impact their success:
 
 Who do you think will gain confidence, start on the right foot and be able to perform well?
 
-Some tips:
+Provide new starters with clear expectations, all the resources they need and all the support for a smooth integration to the team. Over the years I have created a manager checklist to prepare and follow up well during onboarding, I will share that at a later stage, but here are some initial tips:
 
 * Maintain an onboarding page that is regularly updated.
 * Encourage new starters to contribute to and improve the onboarding page.
 * Ask them for feedback on the onboarding process.
 * Organise a welcome lunch on their first or second day.
 * Make sure you invite them to all relevant meetings.
+* Follow up regularly with them to see whether they are settling in well or not.
+* Set a calendar reminder for yourself to congratulate them on passing their probation period.
 
 ### Monitoring
 
