@@ -1,0 +1,82 @@
+:root {
+  --code-background-color: #193549;
+  --code-text-color: #ffc600;
+
+  --gold: gold;
+  --silver: silver;
+  --shiny: #fff800;
+  --linkedin-blue: #0a66c2;
+  --white: #fff;
+
+  /* Kind of magic */
+  --magic-start: #ed12d8;
+  --magic-middle: #d8ed12;
+  --magic-end: #12d8ed;
+  --dark-magic-start: #910b84;
+  --dark-magic-middle: #84910b;
+  --dark-magic-end: #0b8491;
+
+  /* Is it easter yet? */
+  --blink-182: #182;
+  --abba: #abba;
+  --bad-ass: #4224B2;
+  --ssa-dab: #bada55;
+  --money-money: #888;
+  --tainted-love: #520;
+  --the-answer-to-the-ultimate-question-of-life-the-universe-and-everything: #424242;
+  --love: #b20;
+  --s-tier: #ff7f80;
+  --that-color-that-I-saw-and-liked: #35bcca;
+  --that-color-complementary: #ca4335;
+  --toi-toi-toi: #2a2a2a;
+  --da-da-da: #dadada;
+  --2-be-3-or-not-to-be: #2b3;
+  --whats-up: #075e54;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bad-ass: #bada55;
+    --ssa-dab: #7555da;
+
+    /* Is it easter yet? */
+    --blink-182: #182;
+    --abba: #abba;
+    --money-money: #888;
+    --tainted-love: #520;
+    --the-answer-to-the-ultimate-question-of-life-the-universe-and-everything: #cacaca;
+    --love: #b20;
+    --s-tier: #ff7f80;
+    --that-color-that-I-saw-and-liked: #35bcca;
+    --that-color-complementary: #ca4335;
+    --toi-toi-toi: #2a2a2a;
+    --da-da-da: #dadada;
+    --2-be-3-or-not-to-be: #2b3;
+    --whats-up: #075e54;
+  }
+}
+
+.call-out-wrapper {
+  margin: 3vh 0;
+}
+
+.call-out {
+  text-transform: uppercase;
+}
+
+.bad-ass {
+  color: var(--bad-ass);
+}
+
+.notes {
+  color: var(--the-answer-to-the-ultimate-question-of-life-the-universe-and-everything);
+  font-weight: 200;
+}
+
+.notes.small-font {
+  font-size: .8rem;
+}
+
+.margin-small {
+  margin: 0.5rem;
+}

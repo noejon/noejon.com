@@ -122,6 +122,10 @@ h6 {
   flex-direction: column;
 }
 
+.flex-row-center.justify-space-around {
+  justify-content: space-around;
+}
+
 .block {
   display: block;
 }

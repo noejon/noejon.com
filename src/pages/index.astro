@@ -1,11 +1,29 @@
 ---
-import Hero from "../components/common/hero.astro";
+import "../styles/home.css";
+import "../components/common/hero.css";
 import LeBigJon from "../components/header/le-big-jon/le-big-jon.astro";
 import Layout from "../layouts/base-layout.astro";
 ---
 
 <Layout title="Jon Noé - Forever Junior Developer ">
-	<Hero title="This is"><LeBigJon /></Hero>
+	<header class="flex-column-center hero">
+		<div
+			class="max-width flex-row-center full-width justify-space-around call-out-wrapper"
+		>
+			<p class="call-out bad-ass">Dev</p>
+			<p class="call-out bad-ass">✧</p>
+			<p class="call-out bad-ass">Leader</p>
+			<p class="call-out bad-ass">✧</p>
+			<p class="call-out bad-ass">Coach</p>
+		</div>
+		<div class="max-width flex-column-center">
+			<h1>This is</h1>
+			<LeBigJon />
+			<p class="notes margin-small">
+				Enough of the third-person silliness already. Let's get real.
+			</p>
+		</div>
+	</header>
 	<section class="flex-column-center">
 		<article class="max-width post vertical-margin">
 			<p>G'day internet, I'm Jon (just in case it was not obvious!)</p>
