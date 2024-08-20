@@ -5,7 +5,8 @@ import LeBigJon from "../components/header/le-big-jon/le-big-jon.astro";
 import Layout from "../layouts/base-layout.astro";
 ---
 
-<Layout title="Jon Noé - Forever Junior Developer ">
+<script src="../scripts/home.ts"></script>
+<Layout title="Jon Noé - Forever Junior Developer" stickyNav={true}>
 	<header class="flex-column-center hero">
 		<div
 			class="max-width flex-row-center full-width justify-space-around call-out-wrapper"
@@ -17,14 +18,19 @@ import Layout from "../layouts/base-layout.astro";
 			<p class="call-out bad-ass">Coach</p>
 		</div>
 		<div class="max-width flex-column-center">
-			<h1>This is</h1>
+			<h1 class="call-out">This is</h1>
 			<LeBigJon />
-			<p class="notes margin-small">
-				Enough of the third-person silliness already. Let's get real.
-			</p>
+			<h2 class="call-out i-love-dev">
+				<span class="third-dimension">&</span> He <span class="love">
+					♥️
+				</span><code class="code">DEV<span class="cursor">_</span></code>
+			</h2>
 		</div>
 	</header>
 	<section class="flex-column-center">
+		<p class="notes margin-small">
+			Enough of the third-person silliness already. Let's get real.
+		</p>
 		<article class="max-width post vertical-margin">
 			<p>G'day internet, I'm Jon (just in case it was not obvious!)</p>
 			<p>

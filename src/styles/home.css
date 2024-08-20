@@ -17,14 +17,14 @@
   --dark-magic-end: #0b8491;
 
   /* Is it easter yet? */
-  --blink-182: #182;
-  --abba: #abba;
   --bad-ass: #4224B2;
   --ssa-dab: #bada55;
-  --money-money: #888;
+  --3d: #3d3d3d;
+  --blink-182: #182;
+  --abba: #abba;
   --tainted-love: #520;
   --the-answer-to-the-ultimate-question-of-life-the-universe-and-everything: #424242;
-  --love: #b20;
+  --love: #A31E00;
   --s-tier: #ff7f80;
   --that-color-that-I-saw-and-liked: #35bcca;
   --that-color-complementary: #ca4335;
@@ -36,16 +36,19 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --code-background-color: #fafafa;
+    --code-text-color: #193549;
+
     --bad-ass: #bada55;
     --ssa-dab: #7555da;
-
+    --3d: #D3D3D3;
+    --blink-182: #0C6419;
     /* Is it easter yet? */
-    --blink-182: #182;
     --abba: #abba;
     --money-money: #888;
     --tainted-love: #520;
     --the-answer-to-the-ultimate-question-of-life-the-universe-and-everything: #cacaca;
-    --love: #b20;
+    --love: #FFB8A8;
     --s-tier: #ff7f80;
     --that-color-that-I-saw-and-liked: #35bcca;
     --that-color-complementary: #ca4335;
@@ -56,6 +59,18 @@
   }
 }
 
+.bad-ass {
+  color: var(--bad-ass);
+}
+
+.third-dimension {
+  color: var(--3d);
+}
+
+.love {
+  color: var(--love);
+}
+
 .call-out-wrapper {
   margin: 3vh 0;
 }
@@ -64,8 +79,30 @@
   text-transform: uppercase;
 }
 
-.bad-ass {
-  color: var(--bad-ass);
+.call-out.i-love-dev {
+  font-size: 3rem;
+}
+
+.code {
+  text-transform: uppercase;
+  background-color: var(--code-background-color);
+  color: var(--code-text-color);
+  font-family: monospace;
+  border: 1px solid rgba(21, 35, 45, 0.2);
+  border-radius: 5px;
+  font-weight: 300;
+  padding: 0 0.3ch;
+}
+
+.code .cursor {
+  color: var(--blink-182);
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
 
 .notes {

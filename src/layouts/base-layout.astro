@@ -7,9 +7,10 @@ import NavBar from "../components/header/navigation-bar/navigation-bar.astro";
 
 interface Props {
 	title: string;
+	stickyNav?: boolean;
 }
 
-const { title } = Astro.props;
+const { title, stickyNav = false } = Astro.props;
 const DESCRIPTION = "Describing the website";
 ---
 
@@ -26,7 +27,7 @@ const DESCRIPTION = "Describing the website";
 	</head>
 	<body>
 		<div class="page-wrapper">
-			<header class="full-width">
+			<header class:list={["full-width", stickyNav && "sticky-nav"]}>
 				<NavBar />
 			</header>
 			<main class="main-wrapper">

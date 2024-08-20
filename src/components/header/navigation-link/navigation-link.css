@@ -7,6 +7,29 @@
   pointer-events: none;
 }
 
+small:not([data-scroll='0']) {
+  display: none;
+  animation: make-disappear .5s;
+}
+
+@keyframes make-disappear {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+
+  from {
+    display: block;
+  }
+
+  to {
+    display: none;
+  }
+}
+
 .link-text {
   line-height: 1rem;
   font-size: 1.5rem;
