@@ -1,6 +1,7 @@
 ---
 import "../styles/home.css";
 import "../components/common/hero.css";
+import Card from "../components/home/card.astro";
 import LeBigJon from "../components/header/le-big-jon/le-big-jon.astro";
 import Layout from "../layouts/base-layout.astro";
 ---
@@ -31,30 +32,48 @@ import Layout from "../layouts/base-layout.astro";
 		<p class="notes margin-small">
 			Enough of the third-person silliness already. Let's get real.
 		</p>
-		<article class="max-width post vertical-margin">
-			<p>G'day internet, I'm Jon (just in case it was not obvious!)</p>
-			<p>
-				This blog is still under construction, there are many things I want to
-				improve. But there are also many things I want to talk about. So rather
-				than shipping the perfect blog, I just ship it as is and will improve as
-				we go
-			</p>
-			<p>
-				This page is still under construction, ultimately it will look something
-				like <a
-					href="https://noejon.github.io/"
-					target="_blank"
-					rel="noopener noreferrer">my github page</a
-				>.
-			</p>
-			<p>
-				In the meantime, if you want to know more about me, I made a <a
-					href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-					target="_blank"
-					rel="noopener noreferrer">youtube video</a
-				> to introduce myself. You can also check my <a href="/about">about</a> and
-				<a href="/uses">uses</a> page.
-			</p>
-		</article>
+		<Card
+			font="face"
+			cardPadding="big"
+			flexAlign="left"
+			textAlign="left"
+			maxWidth="large"
+		>
+			<Fragment slot="card-content">
+				I am a <span class="s-tier">S-Tier</span>
+				Artist for react and node.js...
+			</Fragment>
+			<Fragment slot="card-comment">
+				Your read it right! <code class="code"
+					>Coding<span class="cursor">_</span></code
+				> is <span class="big-font-and-the-andersons">&#128175;</span> a form of
+				Art
+			</Fragment>
+		</Card>
 	</section>
+	<article class="max-width post vertical-margin">
+		<p>G'day internet, I'm Jon (just in case it was not obvious!)</p>
+		<p>
+			This blog is still under construction, there are many things I want to
+			improve. But there are also many things I want to talk about. So rather
+			than shipping the perfect blog, I just ship it as is and will improve as
+			we go
+		</p>
+		<p>
+			This page is still under construction, ultimately it will look something
+			like <a
+				href="https://noejon.github.io/"
+				target="_blank"
+				rel="noopener noreferrer">my github page</a
+			>.
+		</p>
+		<p>
+			In the meantime, if you want to know more about me, I made a <a
+				href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+				target="_blank"
+				rel="noopener noreferrer">youtube video</a
+			> to introduce myself. You can also check my <a href="/about">about</a> and
+			<a href="/uses">uses</a> page.
+		</p>
+	</article>
 </Layout>

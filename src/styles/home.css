@@ -21,7 +21,6 @@
   --ssa-dab: #bada55;
   --3d: #3d3d3d;
   --blink-182: #182;
-  --abba: #abba;
   --tainted-love: #520;
   --the-answer-to-the-ultimate-question-of-life-the-universe-and-everything: #424242;
   --love: #A31E00;
@@ -32,6 +31,8 @@
   --da-da-da: #dadada;
   --2-be-3-or-not-to-be: #2b3;
   --whats-up: #075e54;
+
+  --card-background: linear-gradient(145deg, #323232, #3c3c3c);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -43,19 +44,21 @@
     --ssa-dab: #7555da;
     --3d: #D3D3D3;
     --blink-182: #0C6419;
-    /* Is it easter yet? */
-    --abba: #abba;
     --money-money: #888;
     --tainted-love: #520;
     --the-answer-to-the-ultimate-question-of-life-the-universe-and-everything: #cacaca;
     --love: #FFB8A8;
-    --s-tier: #ff7f80;
-    --that-color-that-I-saw-and-liked: #35bcca;
+    --s-tier: #FFB8A8;
+    --that-color-that-I-saw-and-liked: #86D6DF;
     --that-color-complementary: #ca4335;
     --toi-toi-toi: #2a2a2a;
     --da-da-da: #dadada;
     --2-be-3-or-not-to-be: #2b3;
     --whats-up: #075e54;
+
+    --card-background: linear-gradient(145deg, #323232, #3c3c3c);
+    --card-shadow: 5px 5px 11px #242424,
+      -5px -5px 11px #4c4c4c;
   }
 }
 
@@ -69,6 +72,10 @@
 
 .love {
   color: var(--love);
+}
+
+.s-tier {
+  color: var(--s-tier);
 }
 
 .call-out-wrapper {
@@ -116,4 +123,157 @@
 
 .margin-small {
   margin: 0.5rem;
+}
+
+.in-your-face.width-small {
+  max-width: 22ch;
+}
+
+.card {
+  border-radius: 1.5rem;
+  background: var(--card-background);
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+}
+
+.card.transition {
+  filter: drop-shadow(0 .3rem 0.5rem 0 var(--background-color));
+  transition: 0.5s ease-in;
+}
+
+.card.transition::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: -.1rem;
+  background: var(--that-color-that-I-saw-and-liked);
+  height: 15rem;
+  width: 1rem;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform 0.75s ease-out;
+}
+
+.card.transition:hover::before {
+  transition-delay: 0.1s;
+  transform: scale(200);
+}
+
+.card.transition:hover {
+  color: var(--background-color);
+  color: var(--background-color);
+}
+
+/* Transition specific to anchors in the cards */
+.card.transition a {
+  filter: drop-shadow(0 .3rem 0.5rem 0 var(--the-answer-to-the-ultimate-question-of-life-the-universe-and-everything));
+  transition: 0.75s ease-in;
+}
+
+.card.transition:hover a {
+  color: var(--that-color-complementary);
+  transition: 0.5s ease-in;
+}
+
+.card.transition:hover::before a {
+  transition-delay: 0.1s;
+  transform: scale(200);
+}
+
+/* End of transition specific to the anchor */
+
+/* Transition specific to S-Tier in the cards */
+.card.transition .s-tier {
+  filter: drop-shadow(0 .3rem 0.5rem 0 var(--the-answer-to-the-ultimate-question-of-life-the-universe-and-everything));
+  transition: 0.75s ease-in;
+}
+
+.card.transition:hover .s-tier {
+  color: #750000;
+  transition: 0.5s ease-in;
+}
+
+.card.transition:hover::before .s-tier {
+  transition-delay: 0.1s;
+  transform: scale(200);
+}
+
+/* End of transition specific to the S-Tier */
+
+/* Transition specific to bad-ass in the cards */
+.card.transition .bad-ass {
+  filter: drop-shadow(0 .3rem 0.5rem 0 var(--the-answer-to-the-ultimate-question-of-life-the-universe-and-everything));
+  transition: 0.75s ease-in;
+}
+
+.card.transition:hover .bad-ass {
+  color: var(--ssa-dab);
+  transition: 0.5s ease-in;
+}
+
+.card.transition:hover::before .bad-ass {
+  transition-delay: 0.1s;
+  transform: scale(200);
+}
+
+/* End of transition specific to the badass */
+
+/* Transition specific to magic in the cards */
+.card.transition .magic {
+  filter: drop-shadow(0 .3rem 0.5rem 0 var(--the-answer-to-the-ultimate-question-of-life-the-universe-and-everything));
+  transition: 0.75s ease-in;
+}
+
+.card.transition:hover .magic {
+  background-image: linear-gradient(-260deg, var(--dark-magic-start) 0%, var(--dark-magic-middle) 33%, var(--dark-magic-end) 66%, var(--dark-magic-start) 100%);
+  transition: 0.5s ease-in;
+}
+
+.card.transition:hover::before .magic {
+  transition-delay: 0.1s;
+  transform: scale(200);
+}
+
+/* End of transition specific to magic */
+
+/* Transition specific to magic in the cards */
+.card.transition .magic {
+  filter: drop-shadow(0 .3rem 0.5rem 0 var(--the-answer-to-the-ultimate-question-of-life-the-universe-and-everything));
+  transition: 0.75s ease-in;
+}
+
+.card.transition:hover .magic {
+  background-image: linear-gradient(-260deg, var(--dark-magic-start) 0%, var(--dark-magic-middle) 33%, var(--dark-magic-end) 66%, var(--dark-magic-start) 100%);
+  transition: 0.5s ease-in;
+}
+
+.card.transition:hover::before .magic {
+  transition-delay: 0.1s;
+  transform: scale(200);
+}
+
+/* End of transition specific to magic */
+
+.card.darker {
+  background-color: var(--toi-toi-toi);
+  color: var(--da-da-da);
+}
+
+.card.padding-big {
+  padding: 3rem;
+}
+
+.card.padding-small {
+  padding: 1.5rem;
+}
+
+.in-your-face {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.big-font-and-the-andersons {
+  font-size: 1.5rem;
+  font-weight: 500;
 }

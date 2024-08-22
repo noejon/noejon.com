@@ -117,6 +117,14 @@ h6 {
   align-items: center;
 }
 
+.to-center {
+  margin: 0 auto;
+}
+
+.remove-margin {
+  margin: 0;
+}
+
 .flex-column-start {
   display: flex;
   flex-direction: column;
@@ -124,6 +132,42 @@ h6 {
 
 .flex-row-center.justify-space-around {
   justify-content: space-around;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-column-align-left {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.flex-column-align-right {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.flex-column-align-center {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.align-self-left {
+  align-self: flex-start;
+}
+
+.align-self-right {
+  align-self: flex-end;
 }
 
 .block {
@@ -140,6 +184,30 @@ a:hover {
 
 .max-width {
   max-width: var(--max-width);
+}
+
+.width-small {
+  max-width: 33ch;
+}
+
+.width-medium {
+  max-width: 66ch;
+}
+
+.width-big {
+  max-width: 100ch;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.z-0 {
+  z-index: 0
 }
 
 .vertical-margin {

@@ -1,0 +1,74 @@
+---
+interface Props {
+  maxWidth?: "small" | "medium" | "large";
+  flexAlign?: "left" | "right" | "center";
+  textAlign?: "left" | "right" | "center";
+  cardPadding: "big" | "small";
+  font: "big" | "face";
+}
+
+const maxWidthMap = {
+  small: "width-small",
+  medium: "width-medium",
+  large: "width-big",
+};
+
+const flexColumnAlignMap = {
+  left: "flex-column-align-left",
+  right: "flex-column-align-right",
+  center: "flex-column-align-center",
+};
+
+const textAlignMap = {
+  left: "text-align-left",
+  right: "text-align-right",
+  center: "text-align-left",
+};
+
+const cardPaddingMap = {
+  big: "padding-big",
+  small: "padding-small",
+};
+
+const fontMap = {
+  big: "big-font-and-the-andersons",
+  face: "in-your-face",
+};
+
+const {
+  maxWidth,
+  flexAlign = "center",
+  textAlign = "center",
+  cardPadding,
+  font,
+} = Astro.props;
+---
+
+<div
+  class:list={[
+    "flex-column",
+    "full-width",
+    "to-center",
+    maxWidth && maxWidthMap[maxWidth],
+    flexColumnAlignMap[flexAlign],
+    textAlignMap[textAlign],
+  ]}
+>
+  <p
+    class:list={[
+      "card",
+      "transition",
+      "z-0",
+      "relative",
+      "z-0",
+      "relative",
+      cardPaddingMap[cardPadding],
+      fontMap[font],
+    ]}
+  >
+    <slot name="card-content" />
+  </p>
+  <p class="notes">
+    <slot name="card-comment" />
+  </p>
+</div>
