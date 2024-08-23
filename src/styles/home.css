@@ -32,7 +32,10 @@
   --2-be-3-or-not-to-be: #2b3;
   --whats-up: #075e54;
 
-  --card-background: linear-gradient(145deg, #323232, #3c3c3c);
+
+  --card-background: linear-gradient(145deg, #dddddd, #ffffff);
+  --card-shadow: 5px 5px 11px #9d9d9d,
+    -5px -5px 11px #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
