@@ -12,6 +12,10 @@ small:not([data-scroll='0']) {
   animation: make-disappear .5s;
 }
 
+small:not([data-scroll='0'])+.link-text {
+  font-size: 1rem;
+}
+
 @keyframes make-disappear {
   0% {
     opacity: 1;

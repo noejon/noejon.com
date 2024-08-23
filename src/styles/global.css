@@ -220,7 +220,13 @@ a:hover {
   top: 0;
   z-index: 99;
   background: var(--background-color);
-  border-bottom: .01rem solid var(--text-color);
+}
+
+.sticky-nav::after {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background: var(--text-color);
 }
 
 .post {

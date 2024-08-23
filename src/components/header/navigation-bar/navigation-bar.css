@@ -12,7 +12,7 @@
 }
 
 .navigation-item:not([data-scroll='0']) {
-  margin: 0 1rem;
+  margin: 0;
   animation: make-no-margin 0.5s;
 }
 
@@ -22,7 +22,7 @@
   }
 
   100% {
-    margin: 0 1rem;
+    margin: 0;
   }
 }
 
@@ -34,5 +34,9 @@
 
   .navigation-item {
     margin: 0;
+  }
+
+  .navigation-item:not([data-scroll='0']) {
+    animation: none;
   }
 }
