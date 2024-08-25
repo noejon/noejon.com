@@ -5,6 +5,7 @@ interface Props {
   textAlign?: "left" | "right" | "center";
   cardPadding: "big" | "small";
   font: "big" | "face";
+  messageId?: string;
 }
 
 const maxWidthMap = {
@@ -41,6 +42,7 @@ const {
   textAlign = "center",
   cardPadding,
   font,
+  messageId,
 } = Astro.props;
 ---
 
@@ -57,18 +59,15 @@ const {
   <p
     class:list={[
       "card",
-      "transition",
-      "z-0",
-      "relative",
-      "z-0",
-      "relative",
+      "margin-small",
       cardPaddingMap[cardPadding],
       fontMap[font],
     ]}
   >
     <slot name="card-content" />
   </p>
-  <p class="notes">
+  <p class="notes margin-small">
     <slot name="card-comment" />
   </p>
+  {messageId && <p data-message-id={messageId} />}
 </div>

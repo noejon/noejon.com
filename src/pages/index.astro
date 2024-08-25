@@ -4,6 +4,8 @@ import "../components/common/hero.css";
 import Card from "../components/home/card.astro";
 import LeBigJon from "../components/header/le-big-jon/le-big-jon.astro";
 import Layout from "../layouts/base-layout.astro";
+import { Image } from "astro:assets";
+import leBigJonImage from "../assets/le-big-jon.jpg";
 ---
 
 <script src="../scripts/home.ts"></script>
@@ -21,17 +23,17 @@ import Layout from "../layouts/base-layout.astro";
 		<div class="max-width flex-column-center">
 			<h1 class="call-out">This is</h1>
 			<LeBigJon />
-			<h2 class="call-out i-love-dev">
+			<h2 class="call-out i-love-dev text-center">
 				<span class="third-dimension">&</span> He <span class="love">
 					♥️
 				</span><code class="code">DEV<span class="cursor">_</span></code>
 			</h2>
 		</div>
-	</header>
-	<section class="flex-column-center">
-		<p class="notes margin-small">
+		<p class="notes margin-small text-center">
 			Enough of the third-person silliness already. Let's get real.
 		</p>
+	</header>
+	<div class="flex-column-center gap relative">
 		<Card
 			font="face"
 			cardPadding="big"
@@ -40,7 +42,7 @@ import Layout from "../layouts/base-layout.astro";
 			maxWidth="large"
 		>
 			<Fragment slot="card-content">
-				I am a <span class="s-tier">S-Tier</span>
+				I am an <span class="s-tier">S-Tier</span>
 				Artist for react and node.js...
 			</Fragment>
 			<Fragment slot="card-comment">
@@ -50,7 +52,38 @@ import Layout from "../layouts/base-layout.astro";
 				Art
 			</Fragment>
 		</Card>
-	</section>
+		<Card
+			font="face"
+			cardPadding="big"
+			flexAlign="right"
+			textAlign="right"
+			maxWidth="large"
+		>
+			<Fragment slot="card-content">
+				...and a great <span class="bad-ass">team leader</span>, <span
+					class="bad-ass">coach</span
+				> and
+				<span class="bad-ass">mentor<sup>*</sup></span>
+			</Fragment>
+			<Fragment slot="card-comment">
+				References can be provided for a fee <span
+					class="shiny big-font-and-the-andersons">$$$</span
+				>
+			</Fragment>
+		</Card>
+		<div class="flex-row-center le-talkative-jon left">
+			<Image
+				src={leBigJonImage}
+				alt="A close up photo of Jon with his sunglasses. This is representing a version of Jon next to a message box to replicate what can be seen on a message application"
+				class="image"
+			/>
+			<div class="message-box">
+				<p id="leMessage">
+					Actually just some text to get started see if it looks OK
+				</p>
+			</div>
+		</div>
+	</div>
 	<article class="max-width post vertical-margin">
 		<p>G'day internet, I'm Jon (just in case it was not obvious!)</p>
 		<p>
