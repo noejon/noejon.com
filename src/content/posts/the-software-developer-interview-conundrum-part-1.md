@@ -1,22 +1,26 @@
 ---
-title: "The software developer interview conundrum"
-pubDate: 2024-08-28
-description: "Interviewing someone for a software developer position is not easy. There is no streamlined process. This is my take on this issue"
+title: "The software developer interview conundrum - Part 1"
+pubDate: 2024-08-30
+description: "Interviewing someone for a software developer position is not easy. There is no streamlined process. In this article we are going through the different type of interviews explaining their pros and cons"
 author: "Jonathan Noé"
 tags: ["interviews", "leadership"]
 ---
 
 G'day Internet
 
-In the past four years, I have conducted my fair share of interviews for ranging from junior to senior software developers to technical lead. I think our hiring process is not bad but it could be improved.
+Today, we're diving into the perplexing, frustrating, but always interesting world of software developing interviews.
 
-Today, we're diving into the perplexing, frustrating, but always interesting world of software developing interviews. We will explore the good, the bad, and the "wait, why am I re-implementing redux using context, again?" of tech interviews.
+We will explore the good, the bad, and the "wait, why am I re-implementing redux using context, again?" of the software developer interviews conundrum.
 
-I will share some of my opinions about those types of interviews and will share my take on what is a nice interview process.
+This is part 1 of a set of 3 articles about the software developer interview conundrum:
 
-## A wide range of interview styles
+- [Part 1: The world of software developing interviews](./the-software-developer-interview-conundrum-part-1.md)
 
-There is a wide range of interview styles in the software industry and each company has their way of interviewing. The bigger the company the more rounds of interviews you can expect. The most common types of interviews are the following
+## The world of software developing interviews
+
+There is a wide range of interview styles in the software industry and each company has their way of interviewing.
+
+The bigger the company the more rounds of interviews you can expect. The most common types of interviews are the following
 
 - Leetcode-based interviews
 - Live Coding interviews
@@ -31,9 +35,11 @@ The type of interviews below are less common in the industry, but could still be
 - Code review interviews
 - Case Study
 
-There is no perfect solution to the software developer interview conundrum. The approach that I am suggesting at the end of this article is just my point of view and is most likely not going to be perfect and might not be suitable for you. Each person and each company that interviews will have their preferred style which makes it a difficult area to navigate for software developers.
+There is no perfect solution to the software developer interview conundrum.
 
-Next we'll dive into these interview styles, discussing pros and cons and I'll add my vision on those tests.
+Each person and each company that interviews have their preferred style, which makes it a difficult area to navigate for software developers.
+
+Next we'll dive into these interview styles, discussing pros and cons. I will add my vision on those tests.
 
 ## The Big Four (Six actually but for some reason it's always a Big Four) of Software Interviews
 
@@ -54,9 +60,11 @@ Cons:
 - As opposed to the above point, it will favour interviewees who specifically train for this kind of interviews...
 - ... and this does not accurately reflect a candidate's ability to write clean and maintainable code.
 
-I might sound a bit negative about leetcode interviews, but I have recently started to do a bit of leetcode myself. First of all, university me would be ashamed of 2024 me... I actually think it's quite fun to solve the problems. And inverting a binary tree is not that hard 😉.
+I might sound a bit negative about leetcode interviews, but I have recently started to do a bit of leetcode myself.
 
-I can understand why big tech goes with this kind of interviews, but I also think that they are are be missing out on great developers more often.
+First of all, university me would be ashamed of 2024 me... I actually think it's quite fun to solve the problems.
+
+And inverting a binary tree is not that hard 😉.
 
 ### 2. Live Coding Interviews
 
@@ -103,9 +111,13 @@ Cons:
 - Candidates might feel inhibited or overshadowed by their pairing partner.
 - The quality of the interview depends heavily on the interviewer's own pairing skills.
 
-As I have alluded before, this is among my favourite type of interviews... IF it is an actual pairing interview and not a disguised Live coding interview.
+As I have alluded before, this is among my favourite types of interviews...
 
-It does not suit all interviewers though, as there is some magic to operating a good pairing session. But mostly, if you have the candidate's best interest in mind, it should go smoothly.
+... if it is an actual pairing interview and not a disguised live coding interview.
+
+It does not suit all interviewers though, as there is some magic to operating a good pairing session.
+
+But mostly, if you have the candidate's best interest in mind, it should go smoothly.
 
 ### 4. Take-Home Assignments: The Homework You Didn't Know You Missed
 
@@ -127,7 +139,15 @@ Cons:
 
 Take home test is also among my favourite types of interviews. Both as an interviewer and an interviewee. It allows interviewees to work on tasks at their own pace.
 
-Be mindful of the length of the interview though. Expecting four hours is already too long. One would want to show their best self in the task try to make the code as good as it gets regardless of the advice to spend only X hours on it. They'll most likely spent X + some (lots?) extra time! That is similarly unfair to the person who then spends only X hours on it and delivers a less polished solution.
+Be mindful of the length of the interview though. Expecting four hours is already too long.
+
+One would want to show their best self in the task try to make the code as good as it gets regardless of the advice to spend only X hours on it.
+
+They'll most likely spent X + some (lots?) extra time! That is similarly unfair to the person who then spends only X hours on it and delivers a less polished solution.
+
+Note on the use of AI.
+
+While in the real-world using AI to help with development is becoming common, it can also build the full feature from scratch. In this case you assess an AI and not the candidate.
 
 ### 5. Technical Knowledge Questions: The Pop Quiz
 
@@ -170,9 +190,17 @@ Cons:
 - It's a very short time frame to design what has taken years to build.
 - May disadvantage candidates from smaller companies or those with less experience in large-scale systems
 
-A system design interview also has its place in the software developer hiring process. I might also be biased because System Design is something that I have always enjoyed. That said, there is a time and a place for it.
+A system design interview also has its place in the software developer hiring process.
 
-I would not throw a system design interview at everyone. I would not, for example, put a junior to mid-level software developer to the task. And for a senior it probably depends on how senior you want that person to be. Definitely would do one for tech lead, staff and principal developers.
+I might also be biased because System Design is something that I have always enjoyed. That said, there is a time and a place for it.
+
+I would not throw a system design interview at everyone.
+
+I would not, for example, put a junior to mid-level software developer to the task.
+
+And for a senior it probably depends on how senior you want that person to be.
+
+Definitely would do one for tech lead, staff and principal developers.
 
 That's it for the Big Four (Six), let's move on to the not so common type of interviews.
 
@@ -180,7 +208,11 @@ That's it for the Big Four (Six), let's move on to the not so common type of int
 
 ### 7. Debugging Interviews: Inspector Gadget: Code Edition
 
-Time to put on your detective hat and solve Dr Claw's Malevolent And Destructive (M.A.D) bugs! Here the interviewee is presented with a codebase full of bugs. Their mission: stop M.A.D. before they release the code to production! This message will self-destruct!
+Time to put on your detective hat and solve Dr Claw's Malevolent And Destructive (M.A.D) bugs!
+
+Here the interviewee is presented with a codebase full of bugs.
+
+Their mission: stop M.A.D. before they release the code to production! This message will self-destruct!
 
 Pros:
 
@@ -194,15 +226,25 @@ Cons:
 - Could be stressful, especially if the bug is particularly hard to find. "It works on my machine" won't save you here!
 - Might favor candidates familiar with specific debugging tools or environments
 
-Disclaimer: I have never actually interviewed or been interviewed on a debugging interview. I have just recently read an interesting article about them (looked for the link, could not find it, sorry!) and decided to add them to the list.
+Disclaimer: I have never actually interviewed or been interviewed on a debugging interview.
+
+I have just recently read an interesting article about them (looked for the link, could not find it, sorry!) and decided to add them to the list.
 
 While I like the concept of this type of interview, the fact that it does not help checking how well an interviewee writes code is a factor that I would consider.
 
-That said, there could be a place for it, or part of it. If your team misses someone who excels at debugging and you are missing that, I would probably tailor the usual interview to integrate this kind of challenges. I would not make it a full hour, probably 15 to 20 minutes.
+That said, there could be a place for it, or part of it.
+
+If your team misses someone who excels at debugging and you are missing that, I would probably tailor the usual interview to integrate this kind of challenges.
+
+I would not make it a full hour, probably 15 to 20 minutes.
 
 ### 8. Code Review Interviews: Judgment Day
 
-Skynet has taken over the world. It would not have happened with some good review on the code quality, efficiency and best practices. Candidates are presented with a codebase they need to judge. And they are judged on how well they judge. Told you it was judgment day.
+Skynet has taken over the world. It would not have happened with some good review on the code quality, efficiency and best practices.
+
+Candidates are presented with a codebase they need to judge. And they are judged on how well they judge.
+
+Told you it was judgment day.
 
 Pros:
 
@@ -243,62 +285,11 @@ I have done this type of interview once and I quite enjoyed it. The preparation 
 
 That said, it's probably not suitable all that much for a software developer. While those are good skills to have, they are probably skills that you expect from higher positions such as tech lead, staff and principal developers.
 
+## Conclusion
+
 Individually, each type of interview has their pros and cons. None of them is perfect and some type of interviews will be more suitable to you, your team, your business, than others.
 
-So now is the moment you all waited for! My take as to what makes a good software developer interview.
-
-## What do you think is a good approach Jon?
-
-Before I discuss what I think is a good interview process, let me tell you what I look for in a candidate:
-
-- is the person I am interacting a human being that I want to spend most of my day with in the foreseeable future?
-- does the person fit in the team and the culture?
-- are they technical enough for the advertised position?
-
-With this in mind, here is the approach that helps me find candidates that meet those criteria.
-
-The job market is ever changing, one day it's a employer-driven market and the other it is an employee-driven market. Interview processes tend to be more cumbersome during an employer-driven market, with more and more rounds.
-
-In general I like to keep the interview process short and fast. A person who gets their first interview on a Friday can expect to get an offer the Friday after. That is the typical speed at which I like to go, but again, with respect to the candidate, if they want to take it a bit more slowly, I respect that and keep it slow!
-
-But Jon, how can you assess someone within a week? Good question!
-
-First there is the behavioural interview. This is where I think my process could be improved. I ask the usual suspects when it comes to behavioural questions. Tell me a time etc etc. While those questions can help you understand a person, often they might have not "prepared" those specific questions and are caught off-guard. Or they might not have a time when.
-
-The fact that a candidate needs to "prepare" for an interview is something I somewhat disagree with. First it takes more of their time. Second the story is usually embellished, or not their story at all. Honest Jon here, I often use stories from someone else when I don't have anything meaty to say. Basically I prepare potential answer to questions to tick the box if they are asked. Do they know more about me? Probably not. I could make it all up and they would know.
-
-One of the best interview I had on the interviewee side is someone who simply asked me to talk about myself. I started off with the usual.
-
-> I am a software developer with 7 years in the industry.
-
-They interrupted me and actually asked to talk about myself. So I went on and talked about myself. We then had a one hour discussion, suggesting each other books and exchanging tips. Eventually we discussed about work and the position, but it was just a natural flow. This is something I definitely want to experiment in the future, being in the interviewer side this time.
-
-If the initial interview goes well, I offer two options:
-
-- A simple take home test, who should not take more than 4 hours (done in 2 by most interviewee)
-- OR sending over a codebase/project the worked on and they are proud of
-
-In that next step invitation, they are also told upfront about the next step after the coding challenge, a pairing session. An actual one.
-
-So we ask them to leave in the readme what they would have improved in the codebase if they had more time, or if there is a feature that they would add.
-
-On our end when we receive the challenge or codebase, we review it well. Also identifying areas where the code could be improved and we prepare what feature we'll work on during the pair programming session.
-
-In the pairing session, I make sure the candidate is at ease, actually trying to collaborate with them towards a solution. You most likely won't implement the full feature within the 45 minutes, but it is fine. Technical skills were assessed when reviewing the code. The pairing session allows us to make sure that this is actually their code, that they understand it and are able to extend it.
-
-The pair programming session is to see if the person collaborates, communicates and takes feedback well. It is also to show the interviewee what they can expect when they start working with the team.
-
-After the pairing session each interviewer debriefs on their own, defining hire or no hire, then gather to discuss the outcome.
-
-At this point depending on the seniority of the position I would add a design system interview if the interview is for a technical lead, staff or principal software engineer.
-
-Similarly after the system design interview, if there is one, each interviewer individually debriefs, decide on hire/no hire and come together to discuss the decision.
-
-At this point, if it is a hire, the person will get an offer on the table on the same day or on the next day.
-
-But Jon, with this little amount of interviews, how can you make sure a 100% that the person is or is not a right fit? Well, in both ways you can't... You will still miss out on extraordinary engineers because they had a bad day. Or hire someone who was not a good fit. But more often than not you'll get the right person.
-
-Thank you for reading my solution to the interview conundrum!
+In Part 2 of this series of articles, I'll add my take as to what makes a good software developer interview process. Stay tuned!
 
 That's all folks!
 
