@@ -1,12 +1,16 @@
 const SCROLL_DIRECTION_UP = "up";
 const SCROLL_DIRECTION_DOWN = "down";
 
-const debounce = (fn) => {
-  // This holds the requestAnimationFrame reference, so we can cancel it if we wish
-  let frame;
+const MESSAGE_OBSERVER_OPTIONS: IntersectionObserverInit = {
+  root: null,
+  threshold: 1,
+}
 
-  // The debounce function returns a new function that can receive a variable number of arguments
-  return (...params) => {
+const debounce = (fn: Function) => {
+  // This holds the requestAnimationFrame reference, so we can cancel it if we wish
+  let frame: number;
+
+  return () => {
     // If the frame variable has been defined, clear it now, and queue for next frame
     if (frame) {
       cancelAnimationFrame(frame);
@@ -15,7 +19,7 @@ const debounce = (fn) => {
     // Queue our function call for the next frame
     frame = requestAnimationFrame(() => {
       // Call our function and pass any params we received
-      fn(...params);
+      fn();
     });
 
   }
@@ -39,7 +43,16 @@ document.addEventListener('DOMContentLoaded', function () {
     navigationItems.forEach((navigationItem) => {
       (navigationItem as HTMLElement).dataset.scroll = "" + currentScrollTop;
     })
+
+    // The following might need to be removed and added to its own scroll event listener. Wanna see the effect on debounce on it first
+    scrollDirection = currentScrollTop > lastScrollTop ? SCROLL_DIRECTION_DOWN : SCROLL_DIRECTION_UP
+    lastScrollTop = currentScrollTop;
   }
 
   document.addEventListener("scroll", debounce(storeScroll), { passive: true })
+  // IntersectionObserverCallback
+  const messagesIntersectionObserverCallback: IntersectionObserverCallback = (entries) => {
+
+  }
+  // const messagesObserver = new IntersectionObserver()
 });

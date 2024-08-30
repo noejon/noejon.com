@@ -104,6 +104,10 @@ h6 {
   width: 100%;
 }
 
+.flex-row {
+  display: flex;
+}
+
 .flex-row-center {
   display: flex;
   justify-content: center;
