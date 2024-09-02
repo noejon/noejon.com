@@ -9,12 +9,9 @@
   --linkedin-white: #fff;
 
   /* Kind of magic */
-  --magic-start: #ed12d8;
-  --magic-middle: #d8ed12;
-  --magic-end: #12d8ed;
-  --dark-magic-start: #910b84;
-  --dark-magic-middle: #84910b;
-  --dark-magic-end: #0b8491;
+  --magic-start: #980B8A;
+  --magic-middle: #b2bf3b;
+  --magic-end: #1B5C5F;
 
   /* Is it easter yet? */
   --bad-ass: #4224B2;
@@ -47,6 +44,10 @@
     --linkedin-blue: #0a66c2;
     --white: #fff;
 
+    --magic-start: #ed12d8;
+    --magic-middle: #d8ed12;
+    --magic-end: #12d8ed;
+
     --bad-ass: #bada55;
     --ssa-dab: #7555da;
     --3d: #D3D3D3;
@@ -70,12 +71,16 @@
   }
 }
 
+.discussion-max-width {
+  max-width: 88ch;
+}
+
 .magic {
   background-image: linear-gradient(-260deg, var(--magic-start) 0%, var(--magic-middle) 33%, var(--magic-end) 66%, var(--magic-start) 100%);
   background-clip: text;
   --webkit--background-clip: text;
   color: transparent;
-  animation: text-clip 1s linear infinite;
+  animation: text-clip 1.5s linear infinite;
   background-size: 200% auto;
 }
 
@@ -95,7 +100,7 @@
 }
 
 .gap {
-  gap: 6rem;
+  gap: 10rem;
 }
 
 .bad-ass {
@@ -189,17 +194,14 @@
 
 /* Talkative Jon, that annoying brat */
 
+.page-wrapper {
+  position: relative;
+  overflow-x: hidden;
+}
+
 .le-talkative-jon {
-  position: absolute;
-  transition: all 0.4s ease-in-out;
-}
-
-.le-talkative-jon.left {
-  align-self: flex-start;
-}
-
-.le-talkative-jon.right {
-  align-self: flex-end;
+  /* position: absolute; */
+  transition: all 0.5s ease-in-out;
 }
 
 .le-talkative-jon .image {
@@ -231,14 +233,14 @@
 
 .le-talkative-jon.right .message-box {
   right: 4.2rem;
-  transform-origin: bottom right;
+  transform-origin: right;
   transform: scale(1.0);
 }
 
 .le-talkative-jon.left .message-box {
   left: 4.2rem;
-  transform-origin: bottom left;
-  transform: scale(1.0);
+  transform-origin: left;
+  transform: scale(1.0)
 }
 
 .le-talkative-jon .message-box:hover {
@@ -275,6 +277,32 @@
   font-size: 1rem;
   font-weight: 200;
   max-width: min(75vw, 30rem, 65ch);
+}
+
+.le-talkative-jon-placeholder {
+  min-width: 100%;
+}
+
+.skill-image {
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  object-fit: contain;
+}
+
+.skill-grid {
+  padding: 0;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fill, 6rem);
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.skill-grid.react {
+  grid-template-columns: repeat(auto-fit, 6rem);
 }
 
 @media(max-width: 600px) {

@@ -13,17 +13,6 @@
 
 .navigation-item:not([data-scroll='0']) {
   margin: 0;
-  animation: make-no-margin 0.5s;
-}
-
-@keyframes make-no-margin {
-  0% {
-    margin: 1rem;
-  }
-
-  100% {
-    margin: 0;
-  }
 }
 
 @media (max-width: 600px) {
@@ -34,9 +23,5 @@
 
   .navigation-item {
     margin: 0;
-  }
-
-  .navigation-item:not([data-scroll='0']) {
-    animation: none;
   }
 }

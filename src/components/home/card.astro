@@ -1,8 +1,7 @@
 ---
 interface Props {
   maxWidth?: "small" | "medium" | "large";
-  flexAlign?: "left" | "right" | "center";
-  textAlign?: "left" | "right" | "center";
+  position?: "left" | "right" | "center";
   cardPadding: "big" | "small";
   font: "big" | "face";
   messageId?: string;
@@ -18,6 +17,12 @@ const flexColumnAlignMap = {
   left: "flex-column-align-left",
   right: "flex-column-align-right",
   center: "flex-column-align-center",
+};
+
+const flexColumnAlignSelfMap = {
+  left: "align-self-left",
+  right: "align-self-right",
+  center: "align-self-center",
 };
 
 const textAlignMap = {
@@ -38,8 +43,7 @@ const fontMap = {
 
 const {
   maxWidth,
-  flexAlign = "center",
-  textAlign = "center",
+  position = "left",
   cardPadding,
   font,
   messageId,
@@ -50,10 +54,10 @@ const {
   class:list={[
     "flex-column",
     "full-width",
-    "to-center",
     maxWidth && maxWidthMap[maxWidth],
-    flexColumnAlignMap[flexAlign],
-    textAlignMap[textAlign],
+    flexColumnAlignSelfMap[position],
+    flexColumnAlignMap[position],
+    textAlignMap[position],
   ]}
 >
   <p
@@ -69,5 +73,9 @@ const {
   <p class="notes margin-small">
     <slot name="card-comment" />
   </p>
-  {messageId && <p data-message-id={messageId} />}
+  {
+    messageId && (
+      <div data-message-id={messageId} class="le-talkative-jon-placeholder" />
+    )
+  }
 </div>

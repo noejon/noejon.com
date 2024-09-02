@@ -1,89 +1,345 @@
 ---
 import "../styles/home.css";
+import "../styles/normalise.css";
+import "../styles/accessibility.css";
+import "../styles/global.css";
 import "../components/common/hero.css";
 import Card from "../components/home/card.astro";
 import LeBigJon from "../components/header/le-big-jon/le-big-jon.astro";
-import Layout from "../layouts/base-layout.astro";
 import { Image } from "astro:assets";
 import leBigJonImage from "../assets/le-big-jon.jpg";
+import reactImage from "../assets/react.svg";
+import NavBar from "../components/header/navigation-bar/navigation-bar.astro";
 ---
 
-<script src="../scripts/home.ts"></script>
-<Layout title="Jon Noé - Forever Junior Developer" stickyNav={true}>
-  <header class="flex-column-center hero">
-    <div
-      class="max-width flex-row-center full-width justify-space-around call-out-wrapper"
-    >
-      <p class="call-out bad-ass">Dev</p>
-      <p class="call-out bad-ass">✧</p>
-      <p class="call-out bad-ass">Leader</p>
-      <p class="call-out bad-ass">✧</p>
-      <p class="call-out bad-ass">Coach</p>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="This is the main page of my website. It is an introduction of who I am, with hopefully a good sense of humor!"
+    />
+    <meta name="author" content="Jonathan Noé" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Jon Noé - Forever Junior Developer</title>
+    <script src="../scripts/home.ts"></script>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header class="full-width sticky-nav">
+        <NavBar />
+      </header>
+      <main class="main-wrapper">
+        <header class="flex-column-center hero">
+          <div
+            class="max-width flex-row-center full-width justify-space-around call-out-wrapper"
+          >
+            <p class="call-out bad-ass">Dev</p>
+            <p class="call-out bad-ass">✧</p>
+            <p class="call-out bad-ass">Leader</p>
+            <p class="call-out bad-ass">✧</p>
+            <p class="call-out bad-ass">Coach</p>
+          </div>
+          <div class="max-width flex-column-center">
+            <h1 class="call-out">This is</h1>
+            <LeBigJon />
+            <h2 class="call-out i-love-dev text-center">
+              <span class="third-dimension">&</span> He <span class="love">
+                ♥️
+              </span><code class="code">DEV<span class="cursor">_</span></code>
+            </h2>
+          </div>
+          <p class="notes margin-small text-center">
+            Enough of the third-person silliness already. Let's get real.
+          </p>
+        </header>
+        <div class="to-center discussion-max-width">
+          <div class="flex-column gap">
+            <Card
+              font="face"
+              cardPadding="big"
+              position="left"
+              maxWidth="large"
+              messageId="0"
+            >
+              <Fragment slot="card-content">
+                I am an <span class="s-tier">S-Tier</span>
+                Artist for react and node.js...
+              </Fragment>
+              <Fragment slot="card-comment">
+                Your read it right! <code class="code"
+                  >Coding<span class="cursor">_</span></code
+                > is <span class="big-font-and-the-andersons">&#128175;</span> a
+                form of Art
+              </Fragment>
+            </Card>
+            <Card
+              font="face"
+              cardPadding="big"
+              position="right"
+              maxWidth="medium"
+              messageId="1"
+            >
+              <Fragment slot="card-content">
+                ...and a great <span class="bad-ass">team leader</span>, <span
+                  class="bad-ass">coach</span
+                > and
+                <span class="bad-ass">mentor<sup>*</sup></span>
+              </Fragment>
+              <Fragment slot="card-comment">
+                References can be provided for a fee <span
+                  class="shiny big-font-and-the-andersons">$$$</span
+                >
+              </Fragment>
+            </Card>
+            <Card
+              font="face"
+              cardPadding="big"
+              position="left"
+              maxWidth="medium"
+              messageId="2"
+            >
+              <Fragment slot="card-content">
+                A real <span class="bad-ass">Full-Stack Developer</span> I excel
+                in the frontend (as you can see, hopefully) and the backend.
+              </Fragment>
+              <Fragment slot="card-comment">
+                It's not full-stack without some sprinkles of DevOps.
+              </Fragment>
+            </Card>
+            <Card
+              font="face"
+              cardPadding="small"
+              position="center"
+              maxWidth="medium"
+            >
+              <Fragment slot="card-content"
+                >Trust me, I am an engineer!</Fragment
+              >
+            </Card>
+            <Card
+              font="face"
+              cardPadding="big"
+              position="right"
+              maxWidth="medium"
+              messageId="3"
+            >
+              <Fragment slot="card-content">
+                I started my career working on an automated test tool for <a
+                  target="_blank"
+                  href="https://en.wikipedia.org/wiki/Electronic_stability_control"
+                  >Electronic Stability Control</a
+                > in cars.
+              </Fragment>
+              <Fragment slot="card-comment">
+                Ever since I steer away from roads! I advise you do the same.
+              </Fragment>
+            </Card>
+            <Card
+              font="face"
+              cardPadding="big"
+              position="left"
+              maxWidth="large"
+              messageId="4"
+            >
+              <Fragment slot="card-content">
+                I was once a
+                <span class="magic">CTO</span>
+                for a SaaS company
+              </Fragment>
+              <Fragment slot="card-comment">
+                Company of 2, the CEO and the software dev!
+              </Fragment>
+            </Card>
+            <Card
+              font="face"
+              cardPadding="big"
+              position="right"
+              maxWidth="medium"
+              messageId="5"
+            >
+              <Fragment slot="card-content">
+                I always liked the idea of writing, on tech or anything else...
+                Here I am, took the leap of faith. Checkout the <a
+                  href="./blog"
+                  target="_blank">blog</a
+                >
+              </Fragment>
+              <Fragment slot="card-comment">
+                I've started so many "books" I can't even recount them.
+              </Fragment>
+            </Card>
+            <Card
+              font="face"
+              cardPadding="big"
+              position="left"
+              maxWidth="medium"
+              messageId="6"
+            >
+              <Fragment slot="card-content">
+                I am <span class="shiny">amazing</span> at painting well tested and
+                maintainable code. I do thorough PR reviews. I also like deployments
+                of my art to be automated.
+              </Fragment>
+              <Fragment slot="card-comment">
+                I'm also great at HTML/CSS/JavaScript, TypeScript, JSON, git,
+                etc...
+              </Fragment>
+            </Card>
+            <Card
+              font="face"
+              cardPadding="big"
+              position="right"
+              maxWidth="medium"
+              messageId="7"
+            >
+              <Fragment slot="card-content">
+                I hope that, as a connoisseur in fine art you can enjoy this
+                <a
+                  href="https://demo.annalise.ai/"
+                  target="_blank"
+                  rel="noopener noreferrer">exquisite piece</a
+                > I worked on.
+              </Fragment>
+              <Fragment slot="card-comment">
+                It's rendering X-RAYS and CTs along with any findings the
+                Annalise AI has found.
+              </Fragment>
+            </Card>
+            <Card
+              font="face"
+              cardPadding="big"
+              position="left"
+              maxWidth="medium"
+              messageId="8"
+            >
+              <Fragment slot="card-content">
+                I am an avid reader. In 2022 I was on a stroll and read more
+                than 200 books
+              </Fragment>
+              <Fragment slot="card-comment">
+                Among which ABC, 123, Grug, Baby All, My First Book, Peeka
+                books, Brown bear and so on...!
+              </Fragment>
+            </Card>
+            <Card
+              font="face"
+              cardPadding="big"
+              position="left"
+              maxWidth="medium"
+              messageId="9"
+            >
+              <Fragment slot="card-content">
+                I take pride in seeing my team members grow and evolve in
+                seniority over time.
+              </Fragment>
+              <Fragment slot="card-comment">
+                I Also mentored two people switching careers to developer
+              </Fragment>
+            </Card>
+            <Card
+              font="face"
+              cardPadding="big"
+              position="center"
+              maxWidth="medium"
+              messageId="10"
+            >
+              <Fragment slot="card-content">
+                <span class="shiny">
+                  The moment you all waited for! Here are some badges!
+                </span>
+              </Fragment>
+            </Card>
+            <div class="width-big">
+              <ul class="skill-grid react">
+                <li class="flex-column skill-item">
+                  <Image
+                    src={reactImage}
+                    alt="The react logo"
+                    class="skill-image"
+                  />
+                  <div class="big-font-and-the-andersons">
+                    <p>React</p>
+                    <p>6 years</p>
+                    <p><span class="magic">★★★</span></p>
+                  </div>
+                </li>
+                <li class="flex-column skill-item">
+                  <Image
+                    src={reactImage}
+                    alt="The react logo"
+                    class="skill-image"
+                  />
+                  <div class="big-font-and-the-andersons">
+                    <p>React</p>
+                    <p>6 years</p>
+                    <p><span class="magic">★★★</span></p>
+                  </div>
+                </li>
+                <li class="flex-column skill-item">
+                  <Image
+                    src={reactImage}
+                    alt="The react logo"
+                    class="skill-image"
+                  />
+                  <div class="big-font-and-the-andersons">
+                    <p>React</p>
+                    <p>6 years</p>
+                    <p><span class="magic">★★★</span></p>
+                  </div>
+                </li>
+                <li class="flex-column skill-item">
+                  <Image
+                    src={reactImage}
+                    alt="The react logo"
+                    class="skill-image"
+                  />
+                  <div class="big-font-and-the-andersons">
+                    <p>React</p>
+                    <p>6 years</p>
+                    <p><span class="magic">★★★</span></p>
+                  </div>
+                </li>
+              </ul>
+              <p class="spacer" data-message-id="11"></p>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
-    <div class="max-width flex-column-center">
-      <h1 class="call-out">This is</h1>
-      <LeBigJon />
-      <h2 class="call-out i-love-dev text-center">
-        <span class="third-dimension">&</span> He <span class="love">
-          ♥️
-        </span><code class="code">DEV<span class="cursor">_</span></code>
-      </h2>
-    </div>
-    <p class="notes margin-small text-center">
-      Enough of the third-person silliness already. Let's get real.
-    </p>
-  </header>
-  <div class="flex-column-center gap relative">
-    <Card
-      font="face"
-      cardPadding="big"
-      flexAlign="left"
-      textAlign="left"
-      maxWidth="large"
-    >
-      <Fragment slot="card-content">
-        I am an <span class="s-tier">S-Tier</span>
-        Artist for react and node.js...
-      </Fragment>
-      <Fragment slot="card-comment">
-        Your read it right! <code class="code"
-          >Coding<span class="cursor">_</span></code
-        > is <span class="big-font-and-the-andersons">&#128175;</span> a form of
-        Art
-      </Fragment>
-    </Card>
-    <Card
-      font="face"
-      cardPadding="big"
-      flexAlign="right"
-      textAlign="right"
-      maxWidth="large"
-    >
-      <Fragment slot="card-content">
-        ...and a great <span class="bad-ass">team leader</span>, <span
-          class="bad-ass">coach</span
-        > and
-        <span class="bad-ass">mentor<sup>*</sup></span>
-      </Fragment>
-      <Fragment slot="card-comment">
-        References can be provided for a fee <span
-          class="shiny big-font-and-the-andersons">$$$</span
+  </body>
+  <footer class="made-by-love">Made with ❤️ by Jon</footer>
+  <div class="flex-row le-talkative-jon right">
+    <Image
+      src={leBigJonImage}
+      alt="A close up photo of Jon with his sunglasses. This is representing a version of Jon next to a message box to replicate what can be seen on a message application"
+      class="image"
+    />
+    <div class="message-box">
+      <p id="leMessage">
+        Growing as a leader I read many books about leadership. The few I keep
+        coming back to:
+        <a
+          target="_blank"
+          href="https://www.oreilly.com/library/view/the-managers-path/9781491973882/"
         >
-      </Fragment>
-    </Card>
-    <div class="flex-row le-talkative-jon right">
-      <Image
-        src={leBigJonImage}
-        alt="A close up photo of Jon with his sunglasses. This is representing a version of Jon next to a message box to replicate what can be seen on a message application"
-        class="image"
-      />
-      <div class="message-box">
-        <p id="leMessage">Just testing with a simple message again</p>
-      </div>
+          The manager's path
+        </a>,
+        <a target="_blank" href="https://resilient-management.com/">
+          Resilient Management
+        </a> and
+        <a target="_blank" href="https://www.mbs.works/coaching-habit-book/">
+          The Coaching Habit
+        </a>
+      </p>
     </div>
   </div>
-</Layout>
-<article class="max-width post vertical-margin">
+</html>
+
+<!-- <article class="max-width post vertical-margin">
   <p>G'day internet, I'm Jon (just in case it was not obvious!)</p>
   <p>
     This blog is still under construction, there are many things I want to
@@ -106,4 +362,4 @@ import leBigJonImage from "../assets/le-big-jon.jpg";
     > to introduce myself. You can also check my <a href="/about">about</a> and
     <a href="/uses">uses</a> page.
   </p>
-</article>
+</article> -->
