@@ -1,8 +1,8 @@
 ---
-import "../styles/home.css";
 import "../styles/normalise.css";
 import "../styles/accessibility.css";
 import "../styles/global.css";
+import "../styles/home.css";
 import "../components/common/hero.css";
 import Card from "../components/home/card.astro";
 import LeBigJon from "../components/header/le-big-jon/le-big-jon.astro";
@@ -10,6 +10,7 @@ import { Image } from "astro:assets";
 import leBigJonImage from "../assets/le-big-jon.jpg";
 import reactImage from "../assets/react.svg";
 import NavBar from "../components/header/navigation-bar/navigation-bar.astro";
+import Badges from "../components/home/badges.astro";
 ---
 
 <!doctype html>
@@ -56,7 +57,7 @@ import NavBar from "../components/header/navigation-bar/navigation-bar.astro";
             Enough of the third-person silliness already. Let's get real.
           </p>
         </header>
-        <div class="to-center discussion-max-width">
+        <div class="to-center discussion max-width">
           <div class="flex-column gap">
             <Card
               font="face"
@@ -162,11 +163,13 @@ import NavBar from "../components/header/navigation-bar/navigation-bar.astro";
               messageId="5"
             >
               <Fragment slot="card-content">
-                I always liked the idea of writing, on tech or anything else...
-                Here I am, took the leap of faith. Checkout the <a
-                  href="./blog"
-                  target="_blank">blog</a
-                >
+                <span class="tnr">
+                  I always liked the idea 💡 of writing 🪶, on tech or anything
+                  else... Here I am, took the leap of faith. Checkout the <a
+                    href="./blog"
+                    target="_blank">blog</a
+                  >
+                </span>
               </Fragment>
               <Fragment slot="card-comment">
                 I've started so many "books" I can't even recount them.
@@ -185,8 +188,8 @@ import NavBar from "../components/header/navigation-bar/navigation-bar.astro";
                 of my art to be automated.
               </Fragment>
               <Fragment slot="card-comment">
-                I'm also great at HTML/CSS/JavaScript, TypeScript, JSON, git,
-                etc...
+                Some of my favourite paint brands are HTML/CSS/JavaScript,
+                TypeScript, JSON, git, etc...
               </Fragment>
             </Card>
             <Card
@@ -222,13 +225,13 @@ import NavBar from "../components/header/navigation-bar/navigation-bar.astro";
               </Fragment>
               <Fragment slot="card-comment">
                 Among which ABC, 123, Grug, Baby All, My First Book, Peeka
-                books, Brown bear and so on...!
+                books, Brown Bear and so on...!
               </Fragment>
             </Card>
             <Card
               font="face"
               cardPadding="big"
-              position="left"
+              position="right"
               maxWidth="medium"
               messageId="9"
             >
@@ -254,7 +257,7 @@ import NavBar from "../components/header/navigation-bar/navigation-bar.astro";
               </Fragment>
             </Card>
             <div class="width-big">
-              <ul class="skill-grid react">
+              <ul class="skill-grid vertical-margin">
                 <li class="flex-column skill-item">
                   <Image
                     src={reactImage}
@@ -304,39 +307,79 @@ import NavBar from "../components/header/navigation-bar/navigation-bar.astro";
                   </div>
                 </li>
               </ul>
-              <p class="spacer" data-message-id="11"></p>
+              <p data-message-id="11"></p>
+            </div>
+            <div class="width-big">
+              <Badges />
+              <p data-message-id="12"></p>
+            </div>
+            <Card
+              font="face"
+              cardPadding="big"
+              position="center"
+              maxWidth="medium"
+              messageId="13"
+            >
+              <Fragment slot="card-content">
+                Got you interested in collaborating with me? Please find
+                attached my latest <a target="_blank" href="./resume">résumé!</a
+                >
+              </Fragment>
+              <Fragment slot="card-comment">
+                And a <a
+                  target="_blank"
+                  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                  >cover letter</a
+                >
+              </Fragment>
+            </Card>
+            <Card
+              font="face"
+              cardPadding="big"
+              position="center"
+              maxWidth="medium"
+              messageId="14"
+            >
+              <Fragment slot="card-content">
+                By this point, you are definitely no longer here, are you?
+              </Fragment>
+              <Fragment slot="card-comment"> </Fragment>
+            </Card>
+            <Card
+              font="face"
+              cardPadding="big"
+              position="center"
+              maxWidth="medium"
+            >
+              <Fragment slot="card-content">
+                If, by miracle, you are still here, feel free to contact me on
+                <a
+                  href="https://www.linkedin.com/in/jonathannoe/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <span class="linkedin-linked">Linked</span><span
+                    class="linkedin-in">in</span
+                  >
+                </a>
+              </Fragment>
+            </Card>
+          </div>
+          <div class="flex-row le-talkative-jon">
+            <Image
+              src={leBigJonImage}
+              alt="A close up photo of Jon with his sunglasses. This is representing a version of Jon next to a message box to replicate what can be seen on a message application"
+              class="image"
+            />
+            <div class="message-box">
+              <p id="leMessage"></p>
             </div>
           </div>
         </div>
       </main>
+      <footer class="made-by-love">Made with ❤️ by Jon</footer>
     </div>
   </body>
-  <footer class="made-by-love">Made with ❤️ by Jon</footer>
-  <div class="flex-row le-talkative-jon right">
-    <Image
-      src={leBigJonImage}
-      alt="A close up photo of Jon with his sunglasses. This is representing a version of Jon next to a message box to replicate what can be seen on a message application"
-      class="image"
-    />
-    <div class="message-box">
-      <p id="leMessage">
-        Growing as a leader I read many books about leadership. The few I keep
-        coming back to:
-        <a
-          target="_blank"
-          href="https://www.oreilly.com/library/view/the-managers-path/9781491973882/"
-        >
-          The manager's path
-        </a>,
-        <a target="_blank" href="https://resilient-management.com/">
-          Resilient Management
-        </a> and
-        <a target="_blank" href="https://www.mbs.works/coaching-habit-book/">
-          The Coaching Habit
-        </a>
-      </p>
-    </div>
-  </div>
 </html>
 
 <!-- <article class="max-width post vertical-margin">

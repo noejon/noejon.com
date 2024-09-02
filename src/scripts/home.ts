@@ -1,10 +1,9 @@
 const MESSAGES = [
-  `The code editor is my canva and the keyboard is my brush. Call me Picasso`,
+  `The code editor is my canvas and the keyboard is my brush. Call me Picasso`,
   `<sup>*</sup>Definitely won't use the fee to bribe anyone.`,
   `Yep! I am your man &#128175;, don't look further! <br/>Actually, please continue scrolling, put lots of work into this!`,
-  `Was initially asked to do the project in excel VBA...
-  Asked two weeks for a C# Prototype!
-  Prototype grew into an award winner`,
+  `Initially asked to do the project in excel VBA, I asked two weeks to prototype in C#!
+  Prototype is an award winner`,
   `We eventually scaled up and that was my introduction to leadership. Learned heaps since then!`,
   `Apparently I even wrote the most amazing, but now lost, book about some dinosaurs friends going on an adventure!`,
   `I am pretty adaptable to any technologies/languages. BUT PLEEEAAAAAASE don't ask me to learn COBOL`,
@@ -18,7 +17,7 @@ const MESSAGES = [
   `Jokes aside, real badges are next`,
   `If you see it here, I am somewhat skilled with it and have shipped code to production.`,
   `"But Jon, how can you write a cover letter? Is it not going to be too generic?" I am a master of my craft, open it you'll see by yourself!`,
-  `That or you are impressed by our little chat! Wanna chat further? Continue reading`,
+  `That or you are impressed by our little chat! Wanna chat further? Scroll a tiny bit more`,
 ];
 
 const SCROLL_DIRECTION_UP = "up";
@@ -29,7 +28,7 @@ const CLASS_LEFT = "left";
 
 const MESSAGE_OBSERVER_OPTIONS = {
   root: null,
-  threshold: 1,
+  threshold: 0,
   rootMargin: "0px 0px 0px 0px"
 }
 
@@ -45,7 +44,7 @@ function wazza(message: HTMLElement) {
 
   leTalkativeJon.style.position = "absolute";
 
-  if (message.parentElement?.classList.contains('flex-column-align-left')) {
+  if (message.parentElement?.classList.contains('flex-column-align-left') || message.parentElement?.classList.contains('flex-column-align-center')) {
     leTalkativeJon.classList.remove(CLASS_RIGHT);
     leTalkativeJon.classList.add(CLASS_LEFT);
     leTalkativeJon.style.left = messageLeft + "px";
@@ -108,6 +107,8 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
       }
 
+      console.log(visibleInterceptors.length);
+
       if ([1, 2].find((index) => visibleInterceptors.length === index)) {
         wazza(visibleInterceptors[visibleInterceptors.length - 1]);
       } else {
@@ -123,6 +124,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Initialising wazza to the first div before adding the observer
   // This is to avoid screen jumping unnecessarily 
   wazza(messageIntersectors[0] as HTMLElement);
+  visibleInterceptors.push(messageIntersectors[0] as HTMLElement);
 
   for (const messageIntersector of messageIntersectors) {
     messagesObserver.observe(messageIntersector);

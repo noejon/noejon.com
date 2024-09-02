@@ -1,0 +1,21 @@
+---
+import { Image } from "astro:assets";
+
+interface Props {
+  skill: string;
+  yearsPracticed: number;
+  src: ImageMetadata;
+  alt: string;
+  dim?: boolean;
+}
+
+const { skill, src, alt, yearsPracticed, dim } = Astro.props;
+---
+
+<li class="flex-column skill-item">
+  <Image src={src} alt={alt} class:list={["skill-image", dim && "dim"]} />
+  <div class="big-font-and-the-andersons">
+    <p>{skill}</p>
+    <p>{yearsPracticed} years</p>
+  </div>
+</li>

@@ -71,7 +71,7 @@
   }
 }
 
-.discussion-max-width {
+.discussion.max-width {
   max-width: 88ch;
 }
 
@@ -100,7 +100,7 @@
 }
 
 .gap {
-  gap: 10rem;
+  gap: 10.5rem;
 }
 
 .bad-ass {
@@ -294,18 +294,62 @@
   padding: 0;
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: repeat(auto-fill, 6rem);
+  grid-template-columns: repeat(auto-fit, 6rem);
   grid-gap: 1rem;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-.skill-grid.react {
-  grid-template-columns: repeat(auto-fit, 6rem);
+.tnr {
+  font-family: 'Times New Roman', Times, serif;
 }
 
-@media(max-width: 600px) {
+a:has(.linkedin-linked) {
+  text-decoration: none;
+}
+
+a:hover:has(.linkedin-linked) {
+  display: inline-block;
+  background: var(--linkedin-white);
+  background-clip: inherit;
+  color: var(--linkedin-blue);
+  animation: none;
+  background-size: 100%;
+  background-color: var(--linkedin-white);
+  text-decoration: none;
+  border-radius: 0.25rem;
+}
+
+a:hover .linkedin-in {
+  border-radius: 0 0.2rem 0.2rem 0;
+}
+
+.linkedin-linked {
+  color: var(--linkedin-blue);
+  padding-left: 0.2ch;
+}
+
+.linkedin-in {
+  color: var(--linkedin-white);
+  background-color: var(--linkedin-blue);
+  display: inline-block;
+  padding: 0 0.2ch;
+  border-radius: 0.25rem;
+  margin-left: 0.2ch;
+}
+
+.made-by-love {
+  margin-top: 40vh;
+}
+
+@media (prefers-color-scheme: light){
+  .dim {
+    filter: brightness(0);
+  }
+}
+
+@media (max-width: 600px) {
   .le-talkative-jon .image {
     width: 2.5rem;
     height: 2.5rem;
