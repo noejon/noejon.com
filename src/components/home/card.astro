@@ -1,0 +1,81 @@
+---
+interface Props {
+  maxWidth?: "small" | "medium" | "large";
+  position?: "left" | "right" | "center";
+  cardPadding: "big" | "small";
+  font: "big" | "face";
+  messageId?: string;
+}
+
+const maxWidthMap = {
+  small: "width-small",
+  medium: "width-medium",
+  large: "width-big",
+};
+
+const flexColumnAlignMap = {
+  left: "flex-column-align-left",
+  right: "flex-column-align-right",
+  center: "flex-column-align-center",
+};
+
+const flexColumnAlignSelfMap = {
+  left: "align-self-left",
+  right: "align-self-right",
+  center: "align-self-center",
+};
+
+const textAlignMap = {
+  left: "text-align-left",
+  right: "text-align-right",
+  center: "text-align-left",
+};
+
+const cardPaddingMap = {
+  big: "padding-big",
+  small: "padding-small",
+};
+
+const fontMap = {
+  big: "big-font-and-the-andersons",
+  face: "in-your-face",
+};
+
+const {
+  maxWidth,
+  position = "left",
+  cardPadding,
+  font,
+  messageId,
+} = Astro.props;
+---
+
+<div
+  class:list={[
+    "flex-column",
+    "full-width",
+    maxWidth && maxWidthMap[maxWidth],
+    flexColumnAlignSelfMap[position],
+    flexColumnAlignMap[position],
+    textAlignMap[position],
+  ]}
+>
+  <p
+    class:list={[
+      "card",
+      "margin-small",
+      cardPaddingMap[cardPadding],
+      fontMap[font],
+    ]}
+  >
+    <slot name="card-content" />
+  </p>
+  <p class="notes margin-small">
+    <slot name="card-comment" />
+  </p>
+  {
+    messageId && (
+      <div data-message-id={messageId} class="le-talkative-jon-placeholder" />
+    )
+  }
+</div>

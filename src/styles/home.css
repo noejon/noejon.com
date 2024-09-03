@@ -1,0 +1,365 @@
+:root {
+  --code-background-color: #193549;
+  --code-text-color: #ffc600;
+
+  --gold: #AF9117;
+  --silver: #71706E;
+  --shiny: #D5C069;
+  --linkedin-blue: #0a66c2;
+  --linkedin-white: #fff;
+
+  /* Kind of magic */
+  --magic-start: #980B8A;
+  --magic-middle: #b2bf3b;
+  --magic-end: #1B5C5F;
+
+  /* Is it easter yet? */
+  --bad-ass: #4224B2;
+  --ssa-dab: #bada55;
+  --3d: #3d3d3d;
+  --blink-182: #182;
+  --tainted-love: #520;
+  --the-answer-to-the-ultimate-question-of-life-the-universe-and-everything: #424242;
+  --love: #A31E00;
+  --s-tier: #A51230;
+  --toi-toi-toi: #2a2a2a;
+  --da-da-da: #dadada;
+  --2-be-3-or-not-to-be: #2b3;
+  --whats-up: #dcf8c6;
+  --whats-up-text: #000;
+
+  --card-background: linear-gradient(145deg, #dddddd, #ffffff);
+  --card-shadow: 5px 5px 11px #9d9d9d,
+    -5px -5px 11px #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --code-background-color: #fafafa;
+    --code-text-color: #193549;
+
+    --gold: gold;
+    --silver: silver;
+    --shiny: #fff800;
+    --linkedin-blue: #0a66c2;
+    --white: #fff;
+
+    --magic-start: #ed12d8;
+    --magic-middle: #d8ed12;
+    --magic-end: #12d8ed;
+
+    --bad-ass: #bada55;
+    --ssa-dab: #7555da;
+    --3d: #D3D3D3;
+    --blink-182: #0C6419;
+    --money-money: #888;
+    --tainted-love: #520;
+    --the-answer-to-the-ultimate-question-of-life-the-universe-and-everything: #cacaca;
+    --love: #FFB8A8;
+    --s-tier: #FFB8A8;
+    --that-color-that-I-saw-and-liked: #86D6DF;
+    --that-color-complementary: #ca4335;
+    --toi-toi-toi: #2a2a2a;
+    --da-da-da: #dadada;
+    --2-be-3-or-not-to-be: #2b3;
+    --whats-up: #075e54;
+    --whats-up-text: #fff;
+
+    --card-background: linear-gradient(145deg, #323232, #3c3c3c);
+    --card-shadow: 5px 5px 11px #242424,
+      -5px -5px 11px #4c4c4c;
+  }
+}
+
+.discussion.max-width {
+  max-width: 88ch;
+}
+
+.magic {
+  background-image: linear-gradient(-260deg, var(--magic-start) 0%, var(--magic-middle) 33%, var(--magic-end) 66%, var(--magic-start) 100%);
+  background-clip: text;
+  --webkit--background-clip: text;
+  color: transparent;
+  animation: text-clip 1.5s linear infinite;
+  background-size: 200% auto;
+}
+
+.shiny {
+  background-image: linear-gradient(-125deg, var(--shiny) 0%, var(--gold) 33%, var(--silver) 66%, var(--shiny) 100%);
+  background-clip: text;
+  --webkit--background-clip: text;
+  color: transparent;
+  animation: text-clip 1.25s linear infinite;
+  background-size: 200% auto;
+}
+
+@keyframes text-clip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.gap {
+  gap: 12rem;
+}
+
+.bad-ass {
+  color: var(--bad-ass);
+}
+
+.third-dimension {
+  color: var(--3d);
+}
+
+.love {
+  color: var(--love);
+}
+
+.s-tier {
+  color: var(--s-tier);
+}
+
+.call-out-wrapper {
+  margin: 3vh 0;
+}
+
+.call-out {
+  text-transform: uppercase;
+}
+
+.call-out.i-love-dev {
+  font-size: 3rem;
+}
+
+.margin-small {
+  margin: 0.5rem;
+}
+
+.code {
+  text-transform: uppercase;
+  background-color: var(--code-background-color);
+  color: var(--code-text-color);
+  font-family: monospace;
+  border: 1px solid rgba(21, 35, 45, 0.2);
+  border-radius: 5px;
+  font-weight: 300;
+  padding: 0 0.3ch;
+}
+
+.code .cursor {
+  color: var(--blink-182);
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.card {
+  border-radius: 1.5rem;
+  background: var(--card-background);
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+}
+
+.card.darker {
+  background-color: var(--toi-toi-toi);
+  color: var(--da-da-da);
+}
+
+.card.padding-big {
+  padding: 1.5rem;
+}
+
+.card.padding-small {
+  padding: 1rem;
+}
+
+.in-your-face {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.big-font-and-the-andersons {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.notes {
+  color: var(--the-answer-to-the-ultimate-question-of-life-the-universe-and-everything);
+  font-weight: 300;
+}
+
+/* Talkative Jon, that annoying brat */
+
+.page-wrapper {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.le-talkative-jon {
+  /* position: absolute; */
+  transition: all 0.5s ease-in-out;
+}
+
+.le-talkative-jon .image {
+  filter: brightness(1.10);
+  width: 3rem;
+  height: 3rem;
+  user-select: none;
+  border-radius: 50%;
+}
+
+.le-talkative-jon.left .image {
+  margin-left: 0.5rem;
+}
+
+.le-talkative-jon.right .image {
+  margin-right: 0.5rem;
+}
+
+.le-talkative-jon .message-box {
+  position: absolute;
+  text-align: start;
+  background-color: var(--whats-up);
+  border-radius: 1rem;
+  opacity: 1;
+  transform: scale(0);
+  width: max-content;
+  transition: all 0.2s ease-in-out;
+}
+
+.le-talkative-jon.right .message-box {
+  right: 4.2rem;
+  transform-origin: right;
+  transform: scale(1.0);
+}
+
+.le-talkative-jon.left .message-box {
+  left: 4.2rem;
+  transform-origin: left;
+  transform: scale(1.0)
+}
+
+.le-talkative-jon .message-box:hover {
+  user-select: none;
+}
+
+.le-talkative-jon.left .message-box::after {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 15px 10px 0;
+  border-color: transparent var(--whats-up) transparent transparent;
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: -14px;
+}
+
+.le-talkative-jon.right .message-box::after {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 15px;
+  border-color: transparent transparent transparent var(--whats-up);
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: -14px;
+}
+
+.le-talkative-jon .message-box p {
+  padding: 0.75rem;
+  color: var(--whats-up-text);
+  font-size: 1rem;
+  font-weight: 200;
+  max-width: min(75vw, 30rem, 65ch);
+}
+
+.le-talkative-jon-placeholder {
+  min-width: 100%;
+}
+
+.skill-image {
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  object-fit: contain;
+}
+
+.skill-grid {
+  padding: 0;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fit, 6rem);
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.tnr {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+a:has(.linkedin-linked) {
+  text-decoration: none;
+}
+
+a:hover:has(.linkedin-linked) {
+  display: inline-block;
+  background: var(--linkedin-white);
+  background-clip: inherit;
+  color: var(--linkedin-blue);
+  animation: none;
+  background-size: 100%;
+  background-color: var(--linkedin-white);
+  text-decoration: none;
+  border-radius: 0.25rem;
+}
+
+a:hover .linkedin-in {
+  border-radius: 0 0.2rem 0.2rem 0;
+}
+
+.linkedin-linked {
+  color: var(--linkedin-blue);
+  padding-left: 0.2ch;
+}
+
+.linkedin-in {
+  color: var(--linkedin-white);
+  background-color: var(--linkedin-blue);
+  display: inline-block;
+  padding: 0 0.2ch;
+  border-radius: 0.25rem;
+  margin-left: 0.2ch;
+}
+
+.made-by-love {
+  margin-top: 40vh;
+}
+
+@media (prefers-color-scheme: light) {
+  .dim {
+    filter: brightness(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .le-talkative-jon .image {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .le-talkative-jon.right .message-box {
+    right: 3.6rem;
+  }
+
+  .le-talkative-jon.left .message-box {
+    left: 3.6rem;
+  }
+}

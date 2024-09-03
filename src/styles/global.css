@@ -58,6 +58,8 @@ html {
 body {
   width: 100vw;
   height: 100svh;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 h1,
@@ -100,8 +102,24 @@ h6 {
   color: var(--text-color-muted);
 }
 
+code {
+  font-family:
+    Menlo,
+    Monaco,
+    Lucida Console,
+    Liberation Mono,
+    DejaVu Sans Mono,
+    Bitstream Vera Sans Mono,
+    Courier New,
+    monospace;
+}
+
 .full-width {
   width: 100%;
+}
+
+.flex-row {
+  display: flex;
 }
 
 .flex-row-center {
@@ -117,9 +135,64 @@ h6 {
   align-items: center;
 }
 
-.flex-column-start {
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.to-center {
+  margin: 0 auto;
+}
+
+.remove-margin {
+  margin: 0;
+}
+
+.flex-row-center.justify-space-around {
+  justify-content: space-around;
+}
+
+.flex-column {
   display: flex;
   flex-direction: column;
+}
+
+.flex-column-align-left {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.flex-column-align-right {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.flex-column-align-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.align-self-left {
+  align-self: flex-start;
+}
+
+.align-self-right {
+  align-self: flex-end;
+}
+
+.align-self-center {
+  align-self: center;
 }
 
 .block {
@@ -138,8 +211,52 @@ a:hover {
   max-width: var(--max-width);
 }
 
+.width-small {
+  max-width: 33ch;
+}
+
+.width-medium {
+  max-width: 66ch;
+}
+
+.width-big {
+  max-width: 100ch;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.z-0 {
+  z-index: 0
+}
+
 .vertical-margin {
   margin: 1rem 0;
+  width: 100%;
+}
+
+.sticky-nav {
+  position: sticky;
+  top: -1px;
+  z-index: 99;
+  background: var(--background-color);
+  border-bottom: .01rem solid var(--text-color);
+}
+
+.page-wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-wrapper {
+  flex: 1;
   width: 100%;
 }
 
@@ -149,22 +266,28 @@ a:hover {
   gap: 1.5rem;
 }
 
-.post a {
+.post a,
+.discussion a
+{
+  color: var(--accent-color);
   text-decoration: underline;
 }
 
 .post a:hover,
-.post a:focus {
+.post a:focus,
+.discussion a:hover,
+.discussion a:focus {
   position: relative;
   text-decoration: underline;
 }
 
-.post a:visited {
+.post a:visited ,
+.discussion a:visited {
   text-decoration: underline;
-  color: var(--text-color);
 }
 
-.post a:active {
+.post a:active,
+.discussion a:active {
   background-color: var(--negative-accent-color);
 }
 

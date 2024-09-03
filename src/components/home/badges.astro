@@ -1,0 +1,126 @@
+---
+import angularImage from "../../assets/angular.svg";
+import astroImage from "../../assets/astro.svg";
+import awsImage from "../../assets/aws.svg";
+import bashImage from "../../assets/bash.svg";
+import csharpImage from "../../assets/csharp.svg";
+import cssImage from "../../assets/css.svg";
+import dockerImage from "../../assets/docker.svg";
+import gitImage from "../../assets/git.svg";
+import htmlImage from "../../assets/html.svg";
+import javascriptImage from "../../assets/javascript.svg";
+import nodeImage from "../../assets/node.svg";
+import reactImage from "../../assets/react.svg";
+import sqlImage from "../../assets/sql.svg";
+import typescriptImage from "../../assets/typescript.svg";
+import Badge from "./badge.astro";
+
+const badgesMap = [
+  {
+    skill: "React",
+    yearStarted: 2018,
+    src: reactImage,
+    alt: "The react logo",
+  },
+  {
+    skill: "Node",
+    yearStarted: 2015,
+    src: nodeImage,
+    alt: "The node logo",
+  },
+  {
+    skill: "TypeScript",
+    yearStarted: 2016,
+    src: typescriptImage,
+    alt: "The react logo",
+  },
+  {
+    skill: "HTML",
+    yearStarted: 2008,
+    src: htmlImage,
+    alt: "The HTML logo",
+  },
+  {
+    skill: "CSS",
+    yearStarted: 2008,
+    src: cssImage,
+    alt: "The CSS logo",
+  },
+  {
+    skill: "JavaScript",
+    yearStarted: 2008,
+    src: javascriptImage,
+    alt: "The Javascript logo",
+  },
+  {
+    skill: "SQL",
+    yearStarted: 2008,
+    src: sqlImage,
+    alt: "The PostgreSQL logo",
+  },
+  {
+    skill: "Bash/ZSH",
+    yearStarted: 2008,
+    src: bashImage,
+    alt: "The Bash logo",
+  },
+  {
+    skill: "AWS",
+    yearStarted: 2015,
+    src: awsImage,
+    alt: "The AWS logo",
+    dim: true,
+  },
+  {
+    skill: "git",
+    yearStarted: 2012,
+    src: gitImage,
+    alt: "The git logo",
+  },
+  {
+    skill: "Docker",
+    yearStarted: 2018,
+    src: dockerImage,
+    alt: "The Docker logo",
+  },
+  {
+    skill: "Astro",
+    yearStarted: 2024,
+    src: astroImage,
+    alt: "The astro logo",
+  },
+  {
+    skill: "Angular",
+    yearStarted: 2016,
+    src: angularImage,
+    alt: "The angular logo",
+    dim: true,
+  },
+  {
+    skill: "C#",
+    yearStarted: 2008,
+    src: csharpImage,
+    alt: "The C Sharp logo",
+  },
+];
+---
+
+<ul class="skill-grid vertical-margin">
+  {
+    badgesMap.map(({ skill, yearStarted, src, alt, dim }) => {
+      const currentYear = new Date().getFullYear();
+      const yearsPracticed =
+        currentYear - yearStarted < 1 ? 1 : currentYear - yearStarted;
+
+      return (
+        <Badge
+          skill={skill}
+          yearsPracticed={yearsPracticed}
+          alt={alt}
+          src={src}
+          dim={dim}
+        />
+      );
+    })
+  }
+</ul>
