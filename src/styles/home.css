@@ -100,7 +100,7 @@
 }
 
 .gap {
-  gap: 10.5rem;
+  gap: 12rem;
 }
 
 .bad-ass {
@@ -343,7 +343,7 @@ a:hover .linkedin-in {
   margin-top: 40vh;
 }
 
-@media (prefers-color-scheme: light){
+@media (prefers-color-scheme: light) {
   .dim {
     filter: brightness(0);
   }

@@ -29,7 +29,7 @@ const CLASS_LEFT = "left";
 const MESSAGE_OBSERVER_OPTIONS = {
   root: null,
   threshold: 0,
-  rootMargin: "0px 0px 0px 0px"
+  rootMargin: "0px 0px -100px 0px"
 }
 
 function wazza(message: HTMLElement) {
@@ -109,8 +109,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       }
     }
-
-    console.log(indexOfCurrentInterceptor);
 
     if (visibleInterceptors.length === 0) {
       return;
