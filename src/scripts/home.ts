@@ -66,7 +66,7 @@ function wazza(message: HTMLElement) {
 document.addEventListener('DOMContentLoaded', function () {
   // Getting the scroll direction to move the message up and down
   let lastScrollTop = window.scrollY || document.body.scrollTop;
-  let scrollDirection: 'up' | 'down';
+  let scrollDirection: 'up' | 'down' = SCROLL_DIRECTION_DOWN;
 
   // The following is a dirty solution. I had great plans, did not pan out.
   // No time for a big refactor, so just hacking the following together
@@ -91,44 +91,39 @@ document.addEventListener('DOMContentLoaded', function () {
     lastScrollTop = currentScrollTop;
   }, { passive: true })
 
-  const visibleInterceptors: HTMLElement[] = [];
+  let visibleInterceptors: HTMLElement[] = [];
+  let indexOfCurrentInterceptor = -1;
+
 
   const messagesIntersectionObserverCallback: IntersectionObserverCallback = (entries) => {
     for (const entry of entries) {
+
       const htmlElementEntry = entry.target as HTMLElement;
       if (entry.isIntersecting) {
         scrollDirection === SCROLL_DIRECTION_DOWN ? visibleInterceptors.push(htmlElementEntry) : visibleInterceptors.unshift(htmlElementEntry);
-      } else {
-        const indexOfTarget = visibleInterceptors.indexOf(htmlElementEntry);
-        visibleInterceptors.splice(indexOfTarget, 1);
-      }
-
-      if (visibleInterceptors.length === 0) {
-        return;
-      }
-
-      console.log(visibleInterceptors.length);
-
-      if ([1, 2].find((index) => visibleInterceptors.length === index)) {
-        wazza(visibleInterceptors[visibleInterceptors.length - 1]);
-      } else {
-        wazza(visibleInterceptors[visibleInterceptors.length - 2]);
+        indexOfCurrentInterceptor++;
+      } else if (visibleInterceptors.length > 0) {
+        if (visibleInterceptors.find((interceptor) => interceptor === htmlElementEntry)) {
+          indexOfCurrentInterceptor--;
+          visibleInterceptors = visibleInterceptors.filter((interceptors) => interceptors !== htmlElementEntry)
+        }
       }
     }
+
+    console.log(indexOfCurrentInterceptor);
+
+    if (visibleInterceptors.length === 0) {
+      return;
+    }
+
+    wazza(visibleInterceptors[indexOfCurrentInterceptor]);
   }
 
   const messagesObserver = new IntersectionObserver(messagesIntersectionObserverCallback, MESSAGE_OBSERVER_OPTIONS);
 
   const messageIntersectors = document.querySelectorAll('[data-message-id]');
 
-  // Initialising wazza to the first div before adding the observer
-  // This is to avoid screen jumping unnecessarily 
-  wazza(messageIntersectors[0] as HTMLElement);
-  visibleInterceptors.push(messageIntersectors[0] as HTMLElement);
-
   for (const messageIntersector of messageIntersectors) {
     messagesObserver.observe(messageIntersector);
   }
-
-
 });
