@@ -14,7 +14,8 @@ We will explore the good, the bad, and the "wait, why am I re-implementing redux
 
 This is part 1 of a set of 3 articles about the software developer interview conundrum:
 
-- [Part 1: The world of software developing interviews](./the-software-developer-interview-conundrum-part-1.md)
+- [Part 1: The world of software developing interviews](./the-software-developer-interview-conundrum-part-1)
+- [Part 2: What makes a good interview process](./the-software-developer-interview-conundrum-part-2)
 
 ## The world of software developing interviews
 

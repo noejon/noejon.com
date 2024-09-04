@@ -9,3 +9,5 @@ Used Wave and Axe tools to check.
 Blink-182:
 
 Added aria description, as the dev is similar to an image, needed to purvey that information to the user.
+
+It's probably not all that accessible still!
