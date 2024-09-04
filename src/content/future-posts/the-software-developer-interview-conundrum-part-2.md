@@ -43,9 +43,9 @@ Jon: Not sure, I have not set any analytics yet, but it sounds about right!
 
 ### The interview process
 
-Noj: Before we dig into the meaty part of this interview, my first question for you: what are you looking for in the interview process?
+Noj: Before we dig into the meaty part of this interview, my first question for you, what are you looking for in the interview process?
 
-Jon: First let me tell you about a truth some might forget in dire times. Every candidate, match or not, is giving you their time, sometimes even some personal time. So respect the candidates time, by making the interview process as seamless as possible for them. Make sure your interview process is a well oiled machine at every part of the process.
+Jon: First let me tell you about a truth some might forget in dire times. Every candidate, match or not, is giving you their time, sometimes even some personal time. So respect candidates' time, by making the interview process as seamless as possible for them. Make sure your interview process is a well oiled machine at every part of the process.
 
 Noj: How long should the whole process take?
 
@@ -53,11 +53,11 @@ Jon: For the right candidate, I would aim towards 10 days ideally.
 
 Noj: That fast?
 
-Jon: This might be a bit fast paced for some candidates. But good people don't stay on the market for much longer than those 10 days.
+Jon: This might be a bit fast paced for some candidates. But good developers don't stay on the market for much longer than those 10 days.
 
-Noj: Even in times like now, where we are in an employee-driven market?
+Noj: 10 days even in times like now, where we are in an employee-driven market?
 
-Jon: Yes even now. If the person fits at every level what do you wait for? Chasing unicorns? Be mindful, as well, that the interviewing process takes time away from the team. They have to reviews CVs, interview and assess the interviewee. I would rather have them focus on the important things: ~~the countless hours of meetings~~ doing feature work.
+Jon: Yes even now. If the person fits at every level what do you wait for? Chasing unicorns? Be mindful, as well, that the interviewing process takes time away from the team. They have to reviews CVs, interview and assess interviewees. I would rather have them focus on the important things: ~~the countless hours of meetings~~ doing feature work.
 
 Noj: You could not have possibly recorded strikethrough text
 
@@ -65,17 +65,19 @@ Jon: Shhhh!
 
 Noj: Going back to our unicorns. What does a unicorn look like?
 
-Jon: Like a horse! They are more common and can do a pretty good job! Now, let's stop comparing people to horses, shall we? Is the human being I am interacting with someone I would want to spend most of my days with? Are they cultural and team fit? Are they technical enough for the position?
+Jon: Like a horse! They are more common and can do a pretty good job! Now, let's stop comparing people to horses, shall we?
+
+What I am looking for: is the human being I am interacting with someone I would want to spend most of my days with? Are they cultural and team fit? Are they technical enough for the position?
 
 ### Bringing the human to the mix
 
 Noj: But Jon, how can you assess someone on those criteria within 10 days?
 
-Jon: Good question. Let's start with the behavioural interview. This is an aspect of my current process that needs an upgrade. I tend to do the usual questions: "Tell me a time when..." and so on. While those questions bring value and help understand the interviewee, I start to like them less and less.
+Jon: Good question. Let's start with the behavioural interview. It is the first interview in my process. This is an aspect of my current process that needs an upgrade. I tend to do the usual questions: "Tell me a time when..." and so on. While those questions bring value and help understand interviewees, I start to like them less and less.
 
 Noj: Why is that?
 
-Jon: Well, first of all, there might not be a time when... In that case the candidate will have to make something up on the spot. Or, if they are like me they "prepare". I have a set of answers to potential behavioural questions. Not for all, but I have it mostly covered. But preparing and reviewing those for an interview is taking time.
+Jon: Well, first of all, there might not be a time when... In that case candidates will have to make something up on the spot. Or, if they are like me they "prepare". I have a set of answers to potential behavioural questions. Not for all, but I have it mostly covered. But preparing and reviewing those for an interview is taking time. It's just another hidden homework one has to do.
 
 Noj: Is that not expected? It's a standard in the interview process?
 
@@ -83,7 +85,7 @@ Jon: It is, but I think we can do better. Especially as those answer are "prepar
 
 Noj: What do you mean here?
 
-Jon: Because one prepares for the interview stories are often embellished to appear as a good answer. And sometimes it's not even their stories at all. When I prepare and I don't have much on a question, I often just steal a story that I have seen happening and that suits the question. At the end of the day it's just a box ticking exercise. On those questions do really know more about me?Probably not. I could make it all up and be convincing and they would not have a clue.
+Jon: Because often those stories are embellished to make it a good answer. And sometimes it's not even their stories at all. When I prepare and don't have much answers on a question, I just shamelessly steal a story I have seen happening that suits the question. At the end of the day it becomes a box ticking exercise. Do interviewers really know more about me? Probably not. I could make it all up and be convincing and they would not have a clue.
 
 Noj: What do you suggest then?
 
@@ -91,13 +93,15 @@ Jon: One of the best interview I had on the interviewee side is with someone who
 
 Noj: That's interesting. How did it go?
 
-Jon: I went on and talked about myself, mindful that we were in an interview. During the interview we talked about my background, kids, then books. We suggested each other books and exchanged tips. Eventually the discussion went towards work and the position, but it was just a natural flow. This is something I definitely want to experiment in the future, being in the interviewer side this time.
+Jon: I went on and talked about myself, mindful that we were in an interview. During the interview we talked about my background, parenting. We suggested each other books and exchanged tips. Eventually the discussion went towards work and the position. But it was just a natural flow. This is something I definitely want to experiment in the future, being in the interviewer side this time.
 
 Noj: So this is where you are going with the title "Bringing the human to the mix"
 
-Jon: Not sure what you are talking about... What title? But indeed, you are putting the candidate in the best conditions, by showing interest in them and listening to what they have to say. This also removes the stress from the interview. Having this human interaction is also going to promote your company culture.
+Jon: Not sure what you are talking about... What title are you referring to?
 
-Noj: Promoting your company culture?
+But yes, it is important to bring the human back in the mix. By putting candidates in the best conditions, showing interest in them and listening to what they have to say. This helps removing the stress of the interview. Having a human interaction also promotes your culture.
+
+Noj: Promoting your culture?
 
 Jon: Yes! Interviewing is obviously two ways. You are interviewing candidates as much as they are interviewing you. To get to know where they could be landing. This is part of the well oiled interview process.
 
@@ -105,43 +109,47 @@ Jon: Yes! Interviewing is obviously two ways. You are interviewing candidates as
 
 Noj: Talking about well oiled process, in [part 1](./the-software-developer-interview-conundrum-part-1) you have shown us the different type of interviews a software developer might encounter. And you told us that none is perfect. So what is your choice when it comes to assess technical skills?
 
-Jon: As I said in the article, I am quite fond of two particular type of interviews. The take home and pairing exercise, when not a disguised coding test. So I usually do a combination of both of those
+Jon: As I said in the article, I am quite fond of two particular type of interviews. The take home and pairing exercises, the latter when it is not a disguised coding test. So I usually do a combination of both of those
 
 Noj: Did you not say you wanted everything done and dusted in 10 days for the right candidate?
 
-Jon: I see your point. Let's start talking about the take home test. First of all, I always ask the interviewee if they have a project that have been or are working on that they are proud of. If they have one and are keen to base the pairing interview on this, they can just avoid the take home test and send us that project.
+Jon: I see your point. Let's start talking about the take home test. First of all, I always ask interviewees if they have a project they have been, or are working on that they are proud of. If they have one they are keen to base the pairing interview on this, they can just avoid the take home test and send us that project.
 
 Otherwise they are asked to do a take home test. It should not take more than 2 hours and I mean it. The task is simple enough, and all the expectations are written in the task description, so no surprises.
 
 Noj: You said something about the pairing session being on their project?
 
-Jon: Yes, the pairing session happens on either their own projects or the take home test. Candidates are asked before the pairing interview on what they would improve. And this is what the pairing session is on.
+Jon: Yes, the follow up pairing session happens either on their own projects or the take home test. Part of the take home challenge is to identify what they would improve. And that is what the pairing session is based on.
 
 Noj: That's smart. That helps check that it's actually their code, right?
 
-Jon: Exactly. The pairing session starts with them explaining their code. And then we go on an build together. This session is, again, a place where human interaction is at the forefront. Putting candidates at ease is paramount, and that happens by providing inputs, feedback and coding with them. If you see they block on something, if you have the answer tell them. If you don't google for them the first time and let them know you just googled.
+Jon: Exactly. The pairing session starts with them taking us through their code. And then we go on and build a feature together.
 
-Noj: So really as if you were pairing in your day to day job! So what are you getting out of the pairing session?
+This session is, again, a place where human interaction is at the forefront. Putting candidates at ease is paramount, and that happens by providing inputs, feedback and coding with them.
 
-Jon: To assess how well they collaborate, communicate and take feedback. The technical part is assessed more so by looking at the code prior, and when they explain their code at the beginning. It also shows interviewees what they can expect when working with the team.
+If you see they are blocked on something you have the answer to, tell them. If you don't have an answer, google for them the first time and let them know you just googled. So they are not afraid to do it also.
+
+Noj: So really as if you were pairing in your day to day job! What are you getting out of the pairing session?
+
+Jon: I assess how well they collaborate, communicate and take feedback. The technical part is assessed more so by looking at the code prior, and when they take us through their code. The pairing session also shows interviewees what they can expect when working with the team.
 
 Noj: So that's it for the interview process?
 
 Jon: Depends on seniority. For a tech lead, staff or principal engineer I would also throw a system design interview in the mix. And follow the same principle of human interaction.
 
-Noj: That's it?
+Noj: Now that's it?
 
-Jon: That's it, after that if we all agree on hiring the person the offer goes out on the same day or the day after.
+Jon: That's it. If we then all agree on hiring the person the offer goes out on the same day or the day after.
 
 Noj: But Jon, with this little amount of interviews, how can you make sure a 100% that the person is or is not a right fit?
 
-Jon: You can never really make sure that they are a fit... You will miss out on extraordinary engineers because they had a bad day. Or hire someone who was not a good fit. But more often than not you'll get the right person.
+Jon: You can never really make sure of it... You will miss out on extraordinary engineers because they had a bad day. Or occasionally hire someone who was not a good fit. But more often than not you'll get the right person.
 
 Noj: We are getting close to the end of today's episode, any last word for us?
 
 Jon: As an interviewer, a successful outcome of the interview should be your goal when getting into the interview. So do everything you can to achieve this goal.
 
-Noj: Thank you so much for your time today! And for out ~~listeners~~ readers to take the time to get here (looks like I figured out this strikethrough stuff as well)
+Noj: Thank you so much for your time today! And for our ~~listeners~~ readers to take the time read it all (looks like I figured out this strikethrough stuff as well).
 
 That's all folks!
 
