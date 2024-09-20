@@ -6,6 +6,8 @@ author: "Jonathan Noé"
 tags: ["interviews", "leadership"]
 ---
 
+G'day Internet
+
 ## Interviewer best practices
 
 ### Dos
@@ -41,3 +43,7 @@ From there it generally spirals into nothingness and all I think about is that I
 Don't ask candidates to work on an actual production issue. Whatever the type of interview you are doing.
 
 Don't ghost candidates after they interviewed with you. If you realise that a mistake happened in the process and you ghosted them as a result, send an apology.
+
+That's all folks!
+
+Jon
