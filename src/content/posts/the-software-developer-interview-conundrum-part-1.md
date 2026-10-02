@@ -16,6 +16,8 @@ This is part 1 of a set of 3 articles about the software developer interview con
 
 - [Part 1: The world of software developing interviews](./the-software-developer-interview-conundrum-part-1)
 - [Part 2: What makes a good interview process](./the-software-developer-interview-conundrum-part-2)
+- [Part 3: The Dos and Don'ts of software interviews](./the-software-developer-interview-conundrum-part-3)
+- Part 4: Hiring in the era of AI (coming in the next two years, promise)
 
 ## The world of software developing interviews
 
