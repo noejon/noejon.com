@@ -14,6 +14,7 @@ This is part part 2 of a set of 3 articles about the software developer intervie
 
 - [Part 1: The world of software developing interviews](./the-software-developer-interview-conundrum-part-1)
 - [Part 2: What makes a good interview process](./the-software-developer-interview-conundrum-part-2)
+- [Part 3: The Dos and Don'ts of software interviews](./the-software-developer-interview-conundrum-part-3)
 
 So now is the moment you all waited for! My take as to what makes a good software developer interview.
 
