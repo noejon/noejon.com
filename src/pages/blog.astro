@@ -22,7 +22,7 @@ const sortedPosts = allPosts.sort(
     {
       sortedPosts.map((post) => (
         <PostPreview
-          url={`/posts/${post.slug}`}
+          url={`/posts/${post.id}`}
           title={post.data.title}
           description={post.data.description}
         />

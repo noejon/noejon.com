@@ -2,11 +2,14 @@
 import "./navigation-bar.css";
 import NavigationLink from "../navigation-link/navigation-link.astro";
 import LeBigJon from "../le-big-jon/le-big-jon.astro";
+
+// With build.format "file", the home page is "/index.html" at build time
+const isHome = ["/", "/index.html"].includes(Astro.url.pathname);
 ---
 
 <nav class="full-width flex-column-center">
   {
-    Astro.url.pathname !== "/" && (
+    !isHome && (
       <a href="/">
         <LeBigJon />
       </a>
